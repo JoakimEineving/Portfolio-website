@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.25);
+    background: transparent;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid(255, 255, 255, 0.18);
@@ -53,20 +53,24 @@
             text-decoration: none;
             flex-direction: column;
             text-transform: uppercase;
-            font-weight: 500;
+            font-size: 15px;
+            font-weight: 700;
             transition: all 0.3s ease-in-out;
 
             &:hover {
                 color: var(--secondary-color);
+                transform: scale(1.1);
+                
             }
+            
 
         }
 
-        &:hover {
-            div {
-                background: var(--secondary-color);
-            }
-        }
+        // &:hover {
+        //     div {
+        //         background: var(--secondary-color);
+        //     }
+        // }
     }
 
     @media screen and (max-width: 900px) {
