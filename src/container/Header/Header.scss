@@ -6,5 +6,39 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover !important;
-    display: flex;
+    display: flex;    
+
 } 
+
+.home-page {
+    text-align: center;
+    .text-zone {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-height: 90%;
+    }
+
+    h1 {
+        color: var(--white-color);
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        
+    }
+    h2 {
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    
+    }

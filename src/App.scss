@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 .app {
     background-color: var(--primary-color);
     font-family: var(--font-base);
@@ -186,3 +188,23 @@
       padding: 2rem;
     }
   }
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+input,
+textarea {
+  font-family: 'Helvetica Neue';
+}
