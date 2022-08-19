@@ -1,0 +1,119 @@
+.container-skills {
+    height: 800px;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+
+    background-image: url(../../assets/bgWhite.png);
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+        
+
+}
+
+article {
+    --img-scale: 1.001;
+    --title-color: black;
+    --link-icon-translate: -20px;
+    --link-icon-opacity: 0;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: none;
+    background: #fff;
+    transform-origin: center center;
+    transition: all 0.4s ease-in-out;
+    height: 500px;
+  }
+  
+  article img {
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  article:has(a:hover, a:focus-within) {
+    --img-scale: 1.1;
+    --title-color: #28666e;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+      rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  }
+  
+  article h2 {
+    margin: 0 0 18px 0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    transition: color 0.3s ease-out;
+  }
+  
+  article a {
+    display: block;
+    color: var(--title-color);
+  }
+  
+  article a:focus {
+    outline: 1px dotted #28666e;
+  }
+  
+  article a::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    content: "";
+  }
+  
+  .read-more .icon {
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+  }
+  
+  /************************
+  Generic layout 
+  **************************/
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+
+  
+  .article-body {
+    padding: 24px;
+    text-align: center;
+  }
+  
+  .articles {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+    line-height: 0;
+  }
+  
+
+  
