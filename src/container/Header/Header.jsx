@@ -30,7 +30,8 @@ const Header = () => {
             clearTimeout(timeoutId)}}, [])
   return (
       <>
-    <section>
+    
+    
     
     <div className="container-header home-page">
             <div className="text-zone">
@@ -58,9 +59,30 @@ const Header = () => {
 				<path class="a2" d="M0 20 L30 52 L60 20"></path>
 				<path class="a3" d="M0 40 L30 72 L60 40"></path>
 			</svg>
+            <div class="stars">
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  
+  </div>
         </div>
         
-        </section>
+       
 
         </>
   )
