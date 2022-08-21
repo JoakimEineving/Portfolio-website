@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.scss';
 import AnimatedLetters from '../../components/AnimatedLetters';
 import { useEffect, useState } from 'react';
-import Loader from 'react-loaders';
+
 import { motion} from 'framer-motion';
 
 
@@ -59,27 +59,6 @@ const Header = () => {
 				<path class="a2" d="M0 20 L30 52 L60 20"></path>
 				<path class="a3" d="M0 40 L30 72 L60 40"></path>
 			</svg>
-            <div class="stars">
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  
-  </div>
         </div>
         
        
