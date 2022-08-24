@@ -35,7 +35,7 @@
             margin-bottom: 5px;
         }
         a {
-            color: var(--gray-color);
+            color: var(--third-color);
             text-decoration: none;
             flex-direction: column;
             text-transform: uppercase;
@@ -44,7 +44,7 @@
             transition: all 0.3s ease-in-out;
 
             &:hover {
-                color: var(--secondary-color);
+                color: var(--animated-color);
                 transform: scale(1.1);
                 
             }

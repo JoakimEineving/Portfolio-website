@@ -2,16 +2,20 @@
 
 :root {
   --font-base: "DM Sans", sans-serif;
+  --background-color: #ffffff;
+  --primary-color: #edf2f800;
+  --secondary-color: #030303;
+  --third-color: #8d8d8d;
+  --fourth-color: black;
+  --animated-color: rgb(56, 169, 221);
 
-  --primary-color: #edf2f8;
-  --secondary-color: #F1d3bc;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
-  --background-color: #455667;
-  --third-color: #8d8d8d;
+ 
+ 
 }
 
 * {

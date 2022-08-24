@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
-import AnimatedLetters from "../../components/AnimatedLetters";
+import { React, useEffect, useState } from "react";
 import { motion } from "framer-motion";
+
 import "./About.scss";
+import Marquee from "react-marquee-slider";
+import { images } from '../../constants';
 
 const scaleVariants = {
   whileInView: {
@@ -14,56 +16,70 @@ const scaleVariants = {
   },
 };
 
+
+
 const About = () => {
-  const [letterClass, setLetterClass] = useState("text-animate");
-  const aboutArray = ["A", "b", "o", "u", "t", " ", "M", "e"];
-
-  useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass("text-animate-hover");
-    }, 3000);
-  }, []);
-
+  
   return (
     <>
-      <div className="container-about">
-      <motion.div
+    <div className="container-slider">
+      
+      <motion.div 
       whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-      transition={{ duration: 0.5, }}
-      className="container-about"
-    >
-        <h1>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={aboutArray}
-            idx={15}
-          />
-          <br />
-        </h1>
-        <div className="box">
-        <p>
+      transition={{ duration: 0.5 }}
+      className="title">
+        <h1>Experience</h1>
+        <p className="title-text">
           I am a freelance UI/UX designer with 4+ years working with startups
           and companies of various sizes. I specialize in designing web apps,
           mobile apps for Android and iOS. I also do photography
           work occasionally.
         </p>
-        
-          <div className="box-container">
-            <h2>2014-2017</h2>
-            <p>Hulebäcksgymnasiet</p>
-            <p>SOCIAL SCIENCE (SAMHÄLLSVETENSKAP)</p>
+      
+      </motion.div>
+
+      <motion.div
+          whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5 }}
+        >
+        <Marquee direction="right" speed={100} delay={5}>
+          <div className="image_wrapper">
+            <img src={images.css} alt="" />
           </div>
-          <div className="box-container">
-            <h2>2020-2023</h2>
-            <p>University Of Gothenburg</p>
-            <p>INFORMATION SYSTEMS (SYSTEMVETENSKAP)</p>
+          <div className="image_wrapper">
+            <img src={images.flutter} alt="" />
           </div>
-          
-        </div>
-        </motion.div>
-      </div>
+          <div className="image_wrapper">
+            <img src={images.git} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={images.html} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={images.js} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={images.python} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={images.react} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={images.scss} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={images.photoshop} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={images.figma} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={images.vscode} alt="" />
+          </div>
+        </Marquee>
+      </motion.div>
+    </div>
     </>
   );
-};
-
+}
 export default About;

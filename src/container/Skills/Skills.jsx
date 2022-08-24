@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from "react";
 import AnimatedLetters from "../../components/AnimatedLetters";
-import LogoPython from "../../assets/python-icon.png";
-import LogoFlutter from "../../assets/flutter-icon.png";
+import { images } from '../../constants';
 import { motion } from "framer-motion";
 import "./Skills.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -52,32 +51,7 @@ const Skills = () => {
           </h1>
           <p>Some of the tools and programming languages i've worked with.</p>
         </motion.div>
-        <motion.div
-          variants={scaleVariants}
-          whileInView={scaleVariants.whileInView}
-          className="container-skills"
-        >
-          <div id="skills-logo">
-            <div className="logo1">
-              <img src={LogoPython} />
-            </div>
-            <div className="logo2">
-              <FontAwesomeIcon icon={faHtml5} />
-            </div>
-            <div className="logo3">
-              <FontAwesomeIcon icon={faCss3} />
-            </div>
-            <div className="logo4">
-              <FontAwesomeIcon icon={faReact} />
-            </div>
-            <div className="logo5">
-              <img src={LogoFlutter} />
-            </div>
-            <div className="logo6">
-              <FontAwesomeIcon icon={faGitAlt} />
-            </div>
-          </div>
-        </motion.div>
+        
       </div>
     </>
   );
