@@ -4,7 +4,6 @@ footer {
 height: 28px;
 
 
-/* Paragraph/Body */
 margin: 0 auto;
 font-family: 'Roboto';
 font-style: normal;
@@ -22,18 +21,4 @@ text-align: center;
 color: var(--secondary-color);
 
 
-/* Inside auto layout */
-
-
-order: 0;
-flex-grow: 0;
-    // width: 100%;
-    // display: inline-block;
-    // background: #ccc;
-    // height: 5vh;
-    // text-align: center;
-    // font-size: 11px;
-    // font-weight: 200;
-    
-  }
- 
+}

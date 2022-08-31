@@ -1,168 +1,149 @@
 .container-header {
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-    overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  overflow: hidden;
 
+  background-image: url(../../assets/header-background.jpg);
+  animation: fadeIn 0.5s backwards;
 
-    background-image: url(../../assets/header-background.jpg);
-    animation: fadeIn 0.5s backwards;
+  background-repeat: no-repeat;
 
-    background-repeat: no-repeat;
-
-    background-size: cover;
+  background-size: cover;
 }
 
 .home-page {
+  margin: 0;
+
+  text-align: center;
+  .text-zone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-height: 90%;
+    z-index: 0;
+  }
+
+  h1 {
+    color: var(--white-color);
+    font-size: 53px;
     margin: 0;
-
-    text-align: center;
-
-    .text-zone {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        max-height: 90%;
-        z-index: 0;
-    }
-
-    h1 {
-        color: var(--white-color);
-        font-size: 53px;
-        margin: 0;
-        font-family: 'Coolvetica';
-        font-weight: 400;
-
-
-    }
-
-    h2 {
-        color: var(--third-color);
-        margin-top: 20px;
-        font-weight: 400;
-        font-size: 11px;
-        font-family: sans-serif;
-        letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
-    }
+    font-family: "Coolvetica";
+    font-weight: 400;
+  }
+  h2 {
+    color: var(--third-color);
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
 }
 
-#icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-    padding: 1rem;
-    animation: fadeIn 1.5s 2.5s backwards;
-    cursor: pointer;
-   
-    .btn {
-      font-size: 35px;
-      padding: 0;
-      border: none;
-      background: none;
-     
-    }
-  }
-   
-  .linkedIn {
-    color: var(--third-color);
-   
-    &:hover {
-      color: var(--secondary-color);
-    }
-  }
-  .github {
-    color: var(--third-color);
-   
-   
-    &:hover {
-      color: var(--secondary-color);
-    }
-  }
-  
-
-
 .arrows {
-    width: 60px;
-    height: 72px;
-    position: absolute;
-    left: 50%;
-    margin-left: -30px;
-    bottom: 20px;
-    animation: fadeIn 1.8s 1.8s backwards;
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+  animation: fadeIn 1.8s 1.8s backwards;
 }
 
 .arrows path {
-    stroke: var(--white-color);
-    fill: transparent;
-    stroke-width: 1px;
-    animation: arrow 2s infinite;
-    -webkit-animation: arrow 2s infinite;
+  stroke: var(--white-color);
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
 }
 
 @keyframes arrow {
-    0% {
-        opacity: 0
-    }
-
-    40% {
-        opacity: 1
-    }
-
-    80% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 0
-    }
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@-webkit-keyframes arrow
-
-/*Safari and Chrome*/
-    {
-    0% {
-        opacity: 0
-    }
-
-    40% {
-        opacity: 1
-    }
-
-    80% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 0
-    }
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .arrows path.a1 {
-    animation-delay: -1s;
-    -webkit-animation-delay: -1s;
-    /* Safari 和 Chrome */
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
 }
 
 .arrows path.a2 {
-    animation-delay: -0.5s;
-    -webkit-animation-delay: -0.5s;
-    /* Safari 和 Chrome */
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
 }
 
 .arrows path.a3 {
-    animation-delay: 0s;
-    -webkit-animation-delay: 0s;
-    /* Safari 和 Chrome */
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  padding: 1rem;
+  animation: fadeIn 1.5s 2.5s backwards;
+  cursor: pointer;
+
+  .btn {
+    font-size: 35px;
+    padding: 0;
+    border: none;
+    background: none;
+    
+  }
+}
+
+.linkedIn {
+  color: var(--third-color);
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+.github {
+  color: var(--third-color);
+  
+
+  &:hover {
+    color: var(--secondary-color);
+  }
 }

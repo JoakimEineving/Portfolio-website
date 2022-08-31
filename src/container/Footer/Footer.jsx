@@ -13,8 +13,7 @@ const Footer = () => {
     <footer class="footer">
 
       <div>
-        <FontAwesomeIcon icon="fa-brands fa-github" />
-        <p>&copy; 2022 Joakim Eineving</p>
+        
       </div>
     </footer>
   )
