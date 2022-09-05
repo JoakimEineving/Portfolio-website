@@ -2,12 +2,12 @@
 
 :root {
   --font-base: "DM Sans", sans-serif;
-  --background-color: #ffffff;
-  --primary-color: #edf2f800;
-  --secondary-color: #030303;
-  --third-color: #8d8d8d;
-  --fourth-color: black;
-  --animated-color: rgb(56, 169, 221);
+  --background-color: #000;
+  --primary-color: #3f96ff00;
+  --secondary-color: #FEE715FF;
+  --third-color: #a2ad99;
+  --fourth-color: #24e93b;
+  --animated-color: #FEE715FF;
 
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
@@ -23,4 +23,12 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+h1 {
+  color: var(--secondary-color);
+  font-size: 53px;
+  margin: 0;
+  font-family: "Coolvetica";
+  font-weight: 400; 
+
 }

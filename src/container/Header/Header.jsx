@@ -6,10 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
-  faGitAlt,
-  faHtml5,
-  faJsSquare,
-  faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 
@@ -51,6 +47,7 @@ const Header = () => {
           <h2>IT-Student / Developer / Photographer</h2>
           {/* <Link to="" className='flat-button'>CONTACT ME</Link> */}
           <div id="icons">
+          <a href="https://www.linkedin.com/in/joakim-eineving-4a11141b7/"> 
           
           <motion.button 
             whileHover={{ scale: 1.1 }}
@@ -60,16 +57,23 @@ const Header = () => {
               <FontAwesomeIcon
                 icon={faLinkedin}
                 className="linkedIn"
+                title={"LinkedIn"}
                 
               />
             </motion.button>
-
+            </a>
+            <a href="https://github.com/JoakimEineving"> 
             <motion.button 
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
             className="btn">
-              <FontAwesomeIcon icon={faGithub} className="github" />
+              <FontAwesomeIcon 
+              icon={faGithub} 
+              className="github"
+              title={"Github"}
+              />
             </motion.button>
+            </a> 
           </div>
         </div>
         <svg class="arrows">

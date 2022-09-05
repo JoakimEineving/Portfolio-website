@@ -1,17 +1,21 @@
-.container-slider {
+.container-about {
   text-align: center;
-  background-color: var(--background-color);
+  /* Created with https://www.css-gradient.com */
+  background: var(--background-color);
+  
+  z-index: 2;
+  position: relative;
 
   @media screen and(max-width:400px) {
-    margin-top: 30px;
+    padding-top: 30px;
   }
 }
 
 .title {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 
   @media screen and(max-width:400px) {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
 .title-text {
@@ -32,8 +36,10 @@
   margin: 0px 30px;
   width: 100px;
 
+
+
   @media screen and(max-width:600px) {
-    margin: 5px;
+    padding: 5px;
   }
 }
 
@@ -41,6 +47,7 @@
   width: 100px;
   height: auto;
   padding-top: 30px;
+  padding-bottom: 30px;
 
   @media screen and(max-width:600px) {
     width: 80px;

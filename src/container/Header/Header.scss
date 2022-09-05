@@ -8,10 +8,11 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  position: relative;
+  // background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   overflow: hidden;
 
-  background-image: url(../../assets/header-background.jpg);
+  // background-image: url(../../assets/header-background.jpg);
   animation: fadeIn 0.5s backwards;
 
   background-repeat: no-repeat;
@@ -42,7 +43,8 @@
   }
   h2 {
     color: var(--third-color);
-    margin-top: 20px;
+    margin: 20px;
+
     font-weight: 400;
     font-size: 13px;
     font-family: sans-serif;
@@ -121,13 +123,14 @@
   gap: 15px;
   padding: 1rem;
   animation: fadeIn 1.5s 2.5s backwards;
-  cursor: pointer;
+  
 
   .btn {
     font-size: 35px;
     padding: 0;
     border: none;
     background: none;
+    cursor: pointer;
     
   }
 }
