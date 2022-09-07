@@ -70,6 +70,8 @@ export default function SoftwareSkill() {
             );
           })}
         </ul>
+    <div className="divider"></div>
+
       </div>
 
   );

@@ -11,6 +11,7 @@ const Skills = () => {
     <div className='container-skills'>
       <SoftwareSkill />
     </div>
+    
   );
 };
 
