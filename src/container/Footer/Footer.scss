@@ -1,18 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-.footer {
-  background-color: #000;
-  color: #fff;
-  padding: 20px 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
+.container-footer {
   text-align: center;
-  display: flex;
-  
-  p{
-    color: white;
+  /* Created with https://www.css-gradient.com */
+  background: var(--background-color);
+  z-index: 2;
+  position: relative;
+  padding-bottom: 25px;
+
+  p {
+    color: var(--third-color);
     
+
+    &:hover {
+      color: var(--secondary-color);
+    }
   }
 }

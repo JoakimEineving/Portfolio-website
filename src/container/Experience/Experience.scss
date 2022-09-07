@@ -1,12 +1,103 @@
-
 .container-experience {
   text-align: center;
-  /* Created with https://www.css-gradient.com */
   background: var(--background-color);
-  width: 100%;
-
+  color: var(--third-color);
+  display: flex;
   z-index: 2;
-  position: absolute;
-
+  
+  position: relative;
 }
- 
+
+.container {
+  padding: 25px;
+
+  align-items: center;
+}
+.boxes {
+  margin-top: 25px;
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  animation: fadeIn 1s 1.8s backwards;
+  @media screen and(max-width:900px) {
+    flex-flow: row wrap;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+.boxes:last-child {
+  margin-top: 60px;
+  display: flex;
+}
+.box {
+  font-size: 1em;
+  line-height: 1.5em;
+  font-weight: 200;
+  padding: 35px;
+
+  :last-child {
+    border-right: 0;
+  }
+  .icon {
+    font-size: 4em;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  .icon:hover {
+    color: var(--secondary-color);
+  }
+  h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 200;
+    line-height: 1em;
+    color: #f2f2f2;
+  }
+  .text-container {
+    font-style: italic;
+    color: var(--fourth-color);
+    margin-bottom: 0.5em;
+    letter-spacing: 1px;
+    font-family: Lora, serif;
+  }
+}
+
+.button {
+  background-color: var(--third-color);
+  border-radius: 5px;
+  color: var(--background-color);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 200px;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.button:not(:disabled):hover,
+.button:not(:disabled):focus {
+  outline: 0;
+  background: var(--secondary-color);
+  box-shadow: 0 0 0 2px rgba(148, 43, 43, 0.2),
+    0 3px 8px 0 rgba(142, 73, 73, 0.15);
+}
+
+.button:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+.divider {
+  border-bottom: solid 1px #777 !important;
+}

@@ -24,15 +24,15 @@ p {
   padding-left: 0;
   list-style: none;
   font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin: 0px 20px 0px 20px;
   text-align: center;
+  
 
 }
 .skill {
   display: inline-block;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   
   i {
     color: var(--third-color);
@@ -51,6 +51,10 @@ p {
 
 .divider {
   border-bottom: solid 1px #777 !important;
+
+  
+    
+  
 
 }
 

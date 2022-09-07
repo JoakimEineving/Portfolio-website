@@ -69,8 +69,9 @@ export default function SoftwareSkill() {
               </motion.li>
             );
           })}
+          <div className="divider"></div>
         </ul>
-    <div className="divider"></div>
+    
 
       </div>
 

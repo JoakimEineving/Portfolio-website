@@ -5,19 +5,26 @@
   
   z-index: 2;
   position: relative;
+  padding-bottom: 50px;
 
   @media screen and(max-width:400px) {
     padding-top: 30px;
   }
+
+  // h1::before {
+  //   content: "─";
+  //   margin-right: 20px;
+  //   color: var(--third-color);
+  // }
+  // h1::after {
+  //   content: "─";
+  //   margin-left: 20px;
+  //   color: var(--third-color);
+  // }
 }
 
-.title {
-  padding-bottom: 50px;
 
-  @media screen and(max-width:400px) {
-    padding-bottom: 30px;
-  }
-}
+
 .title-text {
   color: var(--third-color);
   width: 70%;
@@ -30,6 +37,10 @@
   font-family: "Coolvetica";
   letter-spacing: 3px;
   animation: fadeIn 1s 1.8s backwards;
+
+  @media screen and(max-width:900px) {
+    width: 90%;
+  }
 }
 
 .image_wrapper {
