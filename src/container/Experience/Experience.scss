@@ -12,6 +12,10 @@
   padding: 25px;
 
   align-items: center;
+
+  @media screen and(max-width:900px) {
+    padding: 0px;
+  }
 }
 .boxes {
   margin-top: 25px;
@@ -35,7 +39,11 @@
   line-height: 1.5em;
   font-weight: 200;
   padding: 35px;
+  @media screen and(max-width:900px) {
+    padding: 5%;
+  }
 
+  
   :last-child {
     border-right: 0;
   }
@@ -47,21 +55,16 @@
   .icon:hover {
     color: var(--secondary-color);
   }
-  h2 {
-    font-size: 1.3em;
-    margin-bottom: 0.5em;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 200;
-    line-height: 1em;
-    color: #f2f2f2;
-  }
+  
   .text-container {
     font-style: italic;
     color: var(--fourth-color);
     margin-bottom: 0.5em;
     letter-spacing: 1px;
     font-family: Lora, serif;
+    width:100%;
+
+    
   }
 }
 

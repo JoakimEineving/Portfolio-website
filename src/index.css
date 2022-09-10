@@ -32,3 +32,12 @@ h1 {
   font-weight: 400; 
 
 }
+h2 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 200;
+  line-height: 1em;
+  color: #f2f2f2;
+}

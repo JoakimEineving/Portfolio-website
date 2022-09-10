@@ -4,7 +4,13 @@
   background: var(--background-color);
   z-index: 2;
   position: relative;
+
   padding-bottom: 25px;
+
+  @media screen and(max-width:900px) {
+    padding-top: 15px;
+  padding-bottom: 15px;
+  }
 
   p {
     color: var(--third-color);
