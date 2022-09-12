@@ -22,7 +22,7 @@
   display: flex;
   margin-left: 15%;
   margin-right: 15%;
-  animation: fadeIn 1s 1.8s backwards;
+  
   @media screen and(max-width:900px) {
     flex-flow: row wrap;
     width: 100%;
@@ -38,6 +38,7 @@
   font-size: 1em;
   line-height: 1.5em;
   font-weight: 200;
+  
   padding: 35px;
   @media screen and(max-width:900px) {
     padding: 5%;
@@ -85,21 +86,18 @@
   touch-action: manipulation;
   margin-bottom: 25px;
   margin-top: 25px;
+
+  
 }
 
-.button:not(:disabled):hover,
-.button:not(:disabled):focus {
+.button:hover,
+.button:focus {
   outline: 0;
+  transform: scale(1.05);
   background: var(--secondary-color);
-  box-shadow: 0 0 0 2px rgba(148, 43, 43, 0.2),
-    0 3px 8px 0 rgba(142, 73, 73, 0.15);
 }
 
-.button:disabled {
-  filter: saturate(0.2) opacity(0.5);
-  -webkit-filter: saturate(0.2) opacity(0.5);
-  cursor: not-allowed;
-}
+
 
 .divider {
   border-bottom: solid 1px #777 !important;

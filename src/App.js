@@ -6,19 +6,18 @@ import { Navbar } from "./components";
 import './App.scss';
 
 
-// window.onbeforeunload = () => {  
-//   window.scrollTo(0, 0);  
-// };
+
 
 
 const App = () => {
+  console.log(window.location)
  
   return (
     <div className="app">
       <Navbar />
       <Particles />
       <Header />
-      <About />
+      <About href="about" />
       <Skills />
       <Experience />
       <Footer />

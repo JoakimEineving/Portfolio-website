@@ -9,7 +9,7 @@ import {
 
 const Experience = () => {
   return (
-    <div className="container-experience">
+    <div className="container-experience" id="experience">
       <div class="container">
         <h1>IT Experience</h1>
         <div class="boxes">

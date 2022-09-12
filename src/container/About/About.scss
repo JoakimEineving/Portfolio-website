@@ -6,6 +6,7 @@
   z-index: 2;
   position: relative;
   padding-bottom: 50px;
+  scroll-margin-top: 7rem;
 
   @media screen and(max-width:400px) {
     padding-top: 30px;
@@ -36,11 +37,12 @@
   line-height: 1.5em;
   font-weight: 200;
   
-  letter-spacing: 3px;
-  animation: fadeIn 1s 1.8s backwards;
+  letter-spacing: 1.5px;
+  
 
   @media screen and(max-width:900px) {
     width: 90%;
+    letter-spacing: 0px;
 
   }
 }

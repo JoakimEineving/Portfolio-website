@@ -6,7 +6,7 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <div className="container-about">
+    <div className="container-about" id="about">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         viewport={{ once: true }}

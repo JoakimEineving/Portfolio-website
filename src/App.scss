@@ -1,8 +1,8 @@
 @import 'animate.css';
+
 .app {
     background-color: var(--background-color);
     font-family: var(--font-base);
-    
   }
   
   .app__whitebg {
@@ -84,20 +84,7 @@
     }
   }
   
-  .bold-text {
-    font-size: 1rem;
-    font-weight: 800;
-    color: var(--black-color);
-    text-align: left;
-  
-    @media screen and (min-width: 2000px) {
-      font-size: 2rem;
-    }
-  
-    @media screen and (max-width: 450px) {
-      font-size: 0.9rem;
-    }
-  }
+
   
   .app__social {
     display: flex;

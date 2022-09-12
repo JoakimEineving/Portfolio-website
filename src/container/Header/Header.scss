@@ -24,6 +24,8 @@
   margin: 0;
 
   text-align: center;
+
+  
   .text-zone {
     position: absolute;
     top: 50%;
@@ -44,6 +46,7 @@
   h2 {
     color: var(--third-color);
     margin: 20px;
+    font-style: italic;
 
     font-weight: 400;
     font-size: 13px;
@@ -51,6 +54,7 @@
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
   }
+  
 }
 
 .arrows {
@@ -121,7 +125,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 15px;
-  padding: 1rem;
+  padding: 0.2rem;
   animation: fadeIn 1.5s 2.5s backwards;
   
 

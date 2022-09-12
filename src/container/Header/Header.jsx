@@ -23,7 +23,7 @@ const Header = () => {
   }, []);
   return (
     <>
-      <div className="container-header home-page">
+      <div className="container-header home-page" id="home">
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>
