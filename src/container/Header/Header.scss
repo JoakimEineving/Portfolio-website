@@ -52,7 +52,7 @@
     font-size: 13px;
     font-family: sans-serif;
     letter-spacing: 3px;
-    animation: fadeIn 1s 1.8s backwards;
+    animation: fadeIn 1s 3.5s backwards;
   }
   
 }
@@ -64,7 +64,7 @@
   left: 50%;
   margin-left: -30px;
   bottom: 20px;
-  animation: fadeIn 1.8s 1.8s backwards;
+  animation: fadeIn 1.8s 3.5s backwards;
 }
 
 .arrows path {
@@ -126,7 +126,7 @@
   justify-content: center;
   gap: 15px;
   padding: 0.2rem;
-  animation: fadeIn 1.5s 2.5s backwards;
+  animation: fadeIn 1.5s 4s backwards;
   
 
   .btn {

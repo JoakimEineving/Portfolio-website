@@ -15,13 +15,10 @@
 
   @media screen and(max-width:900px) {
     padding: 0px;
-  
   }
   h1 {
     @media screen and(max-width:900px) {
       padding-top: 20px;
-    
-      
     }
   }
 }
@@ -76,7 +73,7 @@
 
 .button-container {
   margin-bottom: 10px;
-  @media screen and (max-width:700px) {
+  @media screen and (max-width: 700px) {
     margin-top: 0px;
     margin-bottom: 10px;
   }
@@ -98,22 +95,15 @@
   touch-action: manipulation;
   margin: 25px;
 
-  @media screen and (max-width:700px) {
+  @media screen and (max-width: 700px) {
     margin: 10px;
   }
-    
-  }
-
+}
 
 .button:hover,
 .button:focus {
-  outline: 0;
-  transform: scale(1.05);
   background: var(--secondary-color);
-
-
 }
-
 
 .divider {
   border-bottom: solid 1px #777 !important;
