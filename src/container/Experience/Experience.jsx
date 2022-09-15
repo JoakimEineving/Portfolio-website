@@ -46,8 +46,12 @@ const Experience = () => {
             aspernatur aut odit aut fugit
           </div>
         </div>
-        <button class="button">Full Resume</button>
+        <div className="button-container"> 
+        <button className="button">Full Resume</button>
+        <button className="button" onClick={() => window.location = 'mailto:joakim.eineving@gmail.com'}>Contact</button>
+        </div>
         <div className="divider"></div>
+        
       </div>
     </div>
   );

@@ -4,7 +4,7 @@
   color: var(--third-color);
   display: flex;
   z-index: 2;
-  
+
   position: relative;
 }
 
@@ -15,6 +15,14 @@
 
   @media screen and(max-width:900px) {
     padding: 0px;
+  
+  }
+  h1 {
+    @media screen and(max-width:900px) {
+      padding-top: 20px;
+    
+      
+    }
   }
 }
 .boxes {
@@ -22,7 +30,7 @@
   display: flex;
   margin-left: 15%;
   margin-right: 15%;
-  
+
   @media screen and(max-width:900px) {
     flex-flow: row wrap;
     width: 100%;
@@ -38,13 +46,12 @@
   font-size: 1em;
   line-height: 1.5em;
   font-weight: 200;
-  
+
   padding: 35px;
   @media screen and(max-width:900px) {
     padding: 5%;
   }
 
-  
   :last-child {
     border-right: 0;
   }
@@ -56,16 +63,22 @@
   .icon:hover {
     color: var(--secondary-color);
   }
-  
+
   .text-container {
     font-style: italic;
     color: var(--fourth-color);
     margin-bottom: 0.5em;
     letter-spacing: 1px;
     font-family: Lora, serif;
-    width:100%;
+    width: 100%;
+  }
+}
 
-    
+.button-container {
+  margin-bottom: 10px;
+  @media screen and (max-width:700px) {
+    margin-top: 0px;
+    margin-bottom: 10px;
   }
 }
 
@@ -73,30 +86,33 @@
   background-color: var(--third-color);
   border-radius: 5px;
   color: var(--background-color);
-  cursor: pointer;
+  flex-direction: row;
+
   font-weight: bold;
   padding: 10px 15px;
   text-align: center;
-  transition: 200ms;
   width: 200px;
   border: 0;
   font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
+  cursor: pointer;
   touch-action: manipulation;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin: 25px;
 
-  
-}
+  @media screen and (max-width:700px) {
+    margin: 10px;
+  }
+    
+  }
+
 
 .button:hover,
 .button:focus {
   outline: 0;
   transform: scale(1.05);
   background: var(--secondary-color);
-}
 
+
+}
 
 
 .divider {

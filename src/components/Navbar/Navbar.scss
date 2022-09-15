@@ -56,11 +56,6 @@
 
         }
 
-        // &:hover {
-        //     div {
-        //         background: var(--secondary-color);
-        //     }
-        // }
     }
 
     @media screen and (max-width: 900px) {
@@ -68,5 +63,16 @@
         
     }
 }
+
+.p-text {
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--gray-color);
+    line-height: 1.5;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
+  }
 
 

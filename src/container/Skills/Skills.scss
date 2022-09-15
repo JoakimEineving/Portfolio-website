@@ -11,14 +11,31 @@
   
   z-index: 2;
   position: relative;
-  }
-  .icon {
-    color: #534523;
-    font-size: 100px;
-  }
-p {
-  color: #534523;
+
+  .icon{
+    color: var(--third-color);
+    font-size: 55px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    display: flex;
+
+    &:hover {
+      color: var(--secondary-color);
+      
+    }
+    &:hover ~ p{
+      color: var(--secondary-color);
+    }
 }
+  }
+
+
+    
+  
+  
+
+
+    
 
 .developer-icons {
   padding-left: 0;

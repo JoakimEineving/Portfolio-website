@@ -10,14 +10,12 @@ import './App.scss';
 
 
 const App = () => {
-  console.log(window.location)
- 
   return (
     <div className="app">
       <Navbar />
       <Particles />
       <Header />
-      <About href="about" />
+      <About />
       <Skills />
       <Experience />
       <Footer />
