@@ -47,7 +47,6 @@ const Header = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m </span>
-            {/* <img src={LogoTitle} alt="developer" /> */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -101,6 +100,7 @@ const Header = () => {
             <path class="a2" d="M0 20 L30 52 L60 20"></path>
             <path class="a3" d="M0 40 L30 72 L60 40"></path>
           </motion.svg>
+
         </div>
       </div>
     </>

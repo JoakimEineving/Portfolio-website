@@ -1,39 +1,19 @@
-import { React, useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer"; 
+import { React } from "react";
+import { motion} from "framer-motion";
 import "./Skills.scss";
-import  SoftwareSkill  from "../../components/SoftwareSkill";
-
-
+import SoftwareSkill from "../../components/SoftwareSkill";
 
 const Skills = () => {
-  const { ref, inView } = useInView({ threshold: 0.1 });
-  const animation = useAnimation();
-
-  useEffect(() => {
-    console.log("in view", inView);
-    if (inView) {
-      animation.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: 'spring',
-          
-          damping: 20,
-        }
-      })
-    }
-    if (!inView) {
-      animation.start({
-        y: "15vh",
-      });
-    }
-  }, [inView]);
   return (
-    <div ref={ref} className='container-skills'> 
-    <motion.div   animate={animation}>
-      <SoftwareSkill />
-    </motion.div>
+    <div className="container-skills">
+      <motion.div
+        viewport={{ once: true }}
+        initial={{ opacity: 0, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ type: "easeIn", duration: 1, delay: 0.1 }}
+      >
+        <SoftwareSkill />
+      </motion.div>
     </div>
   );
 };

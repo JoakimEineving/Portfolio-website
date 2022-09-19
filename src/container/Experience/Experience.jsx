@@ -1,6 +1,6 @@
-import { React, useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { React } from "react";
+import { motion } from "framer-motion";
+
 import "./Experience.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/free-solid-svg-icons";
@@ -10,31 +10,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Experience = () => {
-  const { ref, inView } = useInView({ threshold: 0.1 });
-  const animation = useAnimation();
-
-  useEffect(() => {
-    console.log("in view", inView);
-    if (inView) {
-      animation.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-
-          damping: 20,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        y: "15vh",
-      });
-    }
-  }, [inView]);
   return (
-    <div ref={ref} className="container-experience" id="experience">
-      <motion.div class="container" animate={animation}>
+    <div className="container-experience" id="experience">
+      <motion.div
+        class="container"
+        viewport={{ once: true }}
+        initial={{ opacity: 0, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ type: "easeIn", duration: 1, delay: 0.1 }}
+      >
         <h1>IT Experience</h1>
         <div class="boxes">
           <div class="box">
@@ -70,7 +54,11 @@ const Experience = () => {
             aspernatur aut odit aut fugit
           </div>
         </div>
-        <div className="button-container">
+        <motion.div className="button-container"
+        viewport={{once: true}}
+        initial={{ opacity: 0, x: 0}}
+        whileInView={{ opacity: 1, x: 0}}
+        transition={{ type: "easeIn", duration: 1, delay: .1}}>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ rotate: 10, scale: 0.75 }}
@@ -79,6 +67,7 @@ const Experience = () => {
             Full Resume
           </motion.button>
           <motion.button
+          
             whileHover={{ scale: 1.05 }}
             whileTap={{ rotate: -10, scale: 0.75 }}
             className="button"
@@ -88,7 +77,7 @@ const Experience = () => {
           >
             Contact
           </motion.button>
-        </div>
+        </motion.div>
         <div className="divider"></div>
       </motion.div>
     </div>

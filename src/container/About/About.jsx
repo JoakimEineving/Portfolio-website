@@ -1,37 +1,19 @@
-import { React, useEffect } from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { React } from "react";
+import { motion } from "framer-motion";
+
 import "./About.scss";
 
 const About = () => {
-  const { ref, inView } = useInView({ threshold: 0.1 });
-  const animation = useAnimation();
 
-  useEffect(() => {
-    console.log("in view", inView);
-    if (inView) {
-      animation.start({
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: 'spring',
-          
-          damping: 20,
-        }
-        
-      })
-    }
-    if (!inView) {
-      animation.start({
-        y: "15vh",
-      });
-    }
-  }, [inView]);
   return (
     <>
-      <div ref={ref} className="container-about" id="about">
+      <div className="container-about" id="about">
         <motion.div
-          animate={animation}
+        
+          viewport={{once: true}}
+          initial={{ opacity: 0, y: 1}}
+          whileInView={{ opacity: 1, x: 0}}
+          transition={{ type: "easeIn", duration: 1, delay: .1}}
           className="title"
         >
           <h1>About Me</h1>
