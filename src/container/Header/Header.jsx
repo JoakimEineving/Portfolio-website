@@ -23,7 +23,6 @@ const Header = () => {
   const animation = useAnimation();
 
   useEffect(() => {
-    console.log("in view", inView);
     if (inView) {
       animation.start({
         y: 0,

@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import { RiFlutterFill } from "react-icons/ri";
 
-
 const mySkills = {
   //fontawesome stylesheet in index.html
   softwareSkills: [
@@ -46,7 +45,6 @@ const mySkills = {
       skill: "Firebase",
       fontAwesome: "fas fa-fire",
     },
-    
   ],
 };
 
@@ -57,35 +55,34 @@ export default function SoftwareSkill() {
         {mySkills.softwareSkills.map((skills, i) => {
           return (
             <motion.li
-              whileHover={{ scale: 1.1 }}
+              viewport={{ once: true }}
+              initial={{ opacity: 0.1 }}
+              whileInView={{ opacity: 1}}
+              transition={{ type: "easein", duration: 1, delay: i * 0.15 }}
               key={i}
               className="skill"
               name={skills.skill}
             >
               <i className={skills.fontAwesome}></i>
-              
+
               <p>{skills.skill}</p>
-              
-              
-              
             </motion.li>
-            
           );
-          
         })}
         <motion.li
-              whileHover={{ scale: 1.1 }}
-              className="skill"
-              name="Flutter"
-            >
-              <RiFlutterFill className="icon" />
-              
-              <p className="text">Flutter</p>
-              
-              
-            </motion.li>
-        
-        <div className="divider"></div>
+          viewport={{ once: true }}
+          initial={{ opacity: 0.1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: "easein", duration: 1, delay: 1.5 }}
+          className="skill"
+          name="Flutter"
+        >
+          <RiFlutterFill className="icon" />
+
+          <p className="text">Flutter</p>
+        </motion.li>
+
+        <div className="divider-skills"></div>
       </ul>
     </div>
   );

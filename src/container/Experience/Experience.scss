@@ -103,8 +103,9 @@
 .button:hover,
 .button:focus {
   background: var(--secondary-color);
+  margin-right: 25px;
 }
 
-.divider {
+.divider-experience {
   border-bottom: solid 1px #777 !important;
 }

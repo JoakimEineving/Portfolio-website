@@ -78,7 +78,7 @@ const Experience = () => {
             Contact
           </motion.button>
         </motion.div>
-        <div className="divider"></div>
+        <div className="divider-experience"></div>
       </motion.div>
     </div>
   );

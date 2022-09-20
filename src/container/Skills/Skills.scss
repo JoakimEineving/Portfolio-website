@@ -7,12 +7,11 @@
   align-items: center;
   margin: 0px;
   background: var(--background-color);
-  
-  
+
   z-index: 2;
   position: relative;
 
-  .icon{
+  .icon {
     color: var(--third-color);
     font-size: 55px;
     margin-bottom: 5px;
@@ -21,21 +20,14 @@
 
     &:hover {
       color: var(--secondary-color);
-      
+      transform: scale(1.1);
     }
-    &:hover ~ p{
+    &:hover ~ p {
       color: var(--secondary-color);
+      transform: scale(1.1);
     }
-}
   }
-
-
-    
-  
-  
-
-
-    
+}
 
 .developer-icons {
   padding-left: 0;
@@ -43,36 +35,34 @@
   font-size: 3rem;
   margin: 0px 20px 0px 20px;
   text-align: center;
-  
-
 }
 .skill {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 25px;
-  
+
   i {
     color: var(--third-color);
   }
   i:hover {
     color: var(--secondary-color);
+    transform: scale(1.1);
   }
   p {
-   color: var(--third-color);
-   font-size: 10px;
+    color: var(--third-color);
+    font-size: 10px;
   }
   i:hover ~ p {
     color: var(--secondary-color);
+    transform: scale(1.1);
   }
 }
 
-.divider {
+.divider-skills {
   border-bottom: solid 1px #777 !important;
+  margin-right: 25px;
 
-  
-    
-  
-
+  @media screen and(max-width:766px) {
+    margin-right: 0px;
+  }
 }
-
-
