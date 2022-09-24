@@ -8,12 +8,11 @@
 
   @media screen and(max-width:900px) {
     padding-top: 15px;
-  padding-bottom: 15px;
+    padding-bottom: 15px;
   }
 
   p {
     color: var(--third-color);
-    
 
     &:hover {
       color: var(--secondary-color);

@@ -10,6 +10,7 @@ import './App.scss';
 
 
 const App = () => {
+  document.title = "Joakim's Portfolio";
   return (
     <div className="app">
       <Navbar />

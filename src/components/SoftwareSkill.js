@@ -57,7 +57,7 @@ export default function SoftwareSkill() {
             <motion.li
               viewport={{ once: true }}
               initial={{ opacity: 0.1 }}
-              whileInView={{ opacity: 1}}
+              whileInView={{ opacity: 1 }}
               transition={{ type: "easein", duration: 1, delay: i * 0.15 }}
               key={i}
               className="skill"

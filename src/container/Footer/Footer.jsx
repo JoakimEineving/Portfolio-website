@@ -5,11 +5,13 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
-      <motion.div className="container-footer"
-      viewport={{once: true}}
-      initial={{ opacity: 0, x: 0}}
-      whileInView={{ opacity: 1, x: 0}}
-      transition={{ type: "easeIn", duration: 1, delay: .1}}>
+      <motion.div
+        className="container-footer"
+        viewport={{ once: true }}
+        initial={{ opacity: 0, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ type: "easeIn", duration: 1, delay: 0.1 }}
+      >
         <p>Joakim Eineving © Copyright 2022</p>
       </motion.div>
     </div>
