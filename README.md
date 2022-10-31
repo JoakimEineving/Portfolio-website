@@ -8,7 +8,7 @@
 <h4 align="center">Resposive Portfolio Website built with <a href="https://reactjs.org/" target="_blank">React</a>.</h4>
 
 <p align="center">
-<img src="https://im3.ezgif.com/tmp/ezgif-3-103c3e7059.gif">
+<img src="https://github.com/JoakimEineving/portfolio-website/blob/master/src/assets/portfolio.gif">
 </p>
 
 <h2>
