@@ -55,7 +55,7 @@ const About = () => {
         >
           <h1>About Me</h1>
           <p className="title-text">
-            I'm a 23-year-old student from Gothenburg, Sweden. I'm currently
+            I'm a 24-year-old student from Gothenburg, Sweden. I'm currently
             studying for a Bachelor's degree in Information Systems at the
             University of Gothenburg and graduating in
             {timerComponents.length ? timerComponents : <span></span>}. Besides

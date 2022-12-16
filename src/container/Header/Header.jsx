@@ -8,8 +8,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const nameArray = [" ", "J", "o", "a", "k", "i", "m", ","];
-  const jobArray = ["I", "T", " ", "S", "t", "u", "d", "e", "n", "t", "."];
+  const nameArray = [" ", "J", "o", "a", "k", "i", "m"];
+  // const jobArray = ["I", "T", " ", "S", "t", "u", "d", "e", "n", "t", "."];
   useEffect(() => {
     let timeoutId = setTimeout(() => {
       setLetterClass("text-animate-hover");
@@ -51,19 +51,19 @@ const Header = () => {
               strArray={nameArray}
               idx={15}
             />
-            <br />
+            {/* <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
               idx={22}
-            />
+            /> */}
           </h1>
           <h2>IT-Student / Developer / Photographer</h2>
           {/* <Link to="" className='flat-button'>CONTACT ME</Link> */}
           <motion.div
             id="icons"
             animate={{ rotate: 360 }}
-            transition={{ type: "spring", duration: 6.5, bounce: 0.8 }}
+            transition={{ type: "spring", duration: 4.5, bounce: 0.8 }}
           >
             <a href="https://www.linkedin.com/in/joakim-eineving-4a11141b7/">
               <motion.button
