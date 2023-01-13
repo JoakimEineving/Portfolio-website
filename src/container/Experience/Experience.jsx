@@ -10,10 +10,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Experience = () => {
-  const openInNewTab = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
-
   return (
     <div className="container-experience" id="experience">
       <motion.div
@@ -72,7 +68,7 @@ const Experience = () => {
             className="button"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=sharing",
+                "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=share_link",
                 "_blank"
               )
             }

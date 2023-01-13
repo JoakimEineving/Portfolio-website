@@ -1,6 +1,6 @@
 .container-slider {
   width: 100%;
-  height: 50vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,49 +9,125 @@
   z-index: 2;
   position: relative;
   padding: 20px;
+ 
+  
+
+  h1 {
+    padding-bottom: 30px;
+  }
+
+ 
+
+  h2 {
+    padding-bottom: 30px;
+    width:auto;
+    overflow: hidden;
+  }
+}
+.project-body {
+  width:auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  background: var(--background-color);
+  z-index: 2;
+  position: relative;
+  padding: 20px;
+  
+
+  h1 {
+    padding-bottom: 30px;
+  }
+
 }
 
-
-
 .swiper {
-  width: 50%;
-  height: 100%;
+  width: 50vw;
+  height: 40vh;
+}
+.swiper-wrapper {
+  display: flex;
 }
 
 .swiper-slide {
   border-radius: 5px;
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: var(--background-color);
+  border: 1px solid var(--secondary-color);
 
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  // display: -webkit-flex;
+  // -webkit-box-pack: center;
+  // -ms-flex-pack: center;
+  // -webkit-justify-content: center;
+  // justify-content: center;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  // -webkit-align-items: center;
+  // align-items: center;
+
+  // &:hover {
+  //   border: 4px solid var(--secondary-color);
+  //   transition: border 0.3s ease-in;
+  // }
+}
+
+
+.swiper-pagination-bullet {
+  background-color: var(--third-color) !important;
+  transition: opacity 0.4s;
+}
+.project-icons{ 
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
+  overflow: hidden;
+  overflow-x: auto;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-self: flex-end;
+  height: 100%;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 2rem;
+  position: absolute;
+}
+
+.flutter {
+  color: var(--third-color);
+  font-size: 40px;
+  margin-bottom: 7px;
+  margin-left: 2px;
+  display: block;
 
   &:hover {
-    /* enlarge */
+    color: var(--secondary-color);
     transform: scale(1.1);
-    border: 4px solid var(--secondary-color);
-    transition: border 0.3s ease-in;
-    
-    
   }
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.project-button {
+  background-color: var(--third-color);
+  border-radius: 5px;
+  color: var(--background-color);
+  object-fit: contain;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  z-index: 0;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+  touch-action: manipulation;
+  margin: 25px;
+  position: absolute;
+
+  @media screen and (max-width: 700px) {
+    margin: 10px;
+  }
 }

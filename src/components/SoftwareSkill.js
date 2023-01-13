@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { RiFlutterFill } from "react-icons/ri";
 
-const mySkills = {
+export const mySkills = {
   //fontawesome stylesheet in index.html
   softwareSkills: [
     {
