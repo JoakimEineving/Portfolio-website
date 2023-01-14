@@ -7,7 +7,6 @@
   align-items: center;
   margin: 0px;
   background: var(--background-color);
-
   z-index: 2;
   position: relative;
 
@@ -22,7 +21,8 @@
       color: var(--secondary-color);
       transform: scale(1.1);
     }
-    &:hover ~ p {
+
+    &:hover~p {
       color: var(--secondary-color);
       transform: scale(1.1);
     }
@@ -36,23 +36,26 @@
   margin: 0px 20px 0px 20px;
   text-align: center;
 }
+
 .skill {
   display: inline-block;
   margin: 12.5px 10px 12.5px 10px;
-  
 
   i {
     color: var(--third-color);
   }
+
   i:hover {
     color: var(--secondary-color);
     transform: scale(1.1);
   }
+
   p {
     color: var(--third-color);
     font-size: 10px;
   }
-  i:hover ~ p {
+
+  i:hover~p {
     color: var(--secondary-color);
     transform: scale(1.1);
   }
@@ -60,7 +63,7 @@
 
 .divider-skills {
   border-bottom: solid 1px #777 !important;
-  margin-right: 25px;
+  margin-right: 15px;
 
   @media screen and(max-width:766px) {
     margin-right: 0px;
