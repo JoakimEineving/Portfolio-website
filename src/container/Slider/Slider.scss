@@ -10,11 +10,13 @@
   position: relative;
   padding: 20px;
 
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+
   h1 {
     padding-bottom: 30px;
   }
-
-
 
   h2 {
     padding-bottom: 30px;
