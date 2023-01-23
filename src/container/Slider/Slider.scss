@@ -19,7 +19,7 @@
   }
 
   h2 {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     width: auto;
     overflow: hidden;
   }
@@ -52,7 +52,7 @@
 }
 
 .swiper {
-  width: 50vw;
+  width: 60vw;
   height: 40vh;
 }
 
@@ -134,11 +134,16 @@
   font-size: 16px;
   cursor: pointer;
   touch-action: manipulation;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   position: absolute;
   bottom: 0;
 
   @media screen and (max-width: 700px) {
     margin: 10px;
   }
+}
+
+#portfolio-img {
+  width: 70%;
+  height: 70%;
 }

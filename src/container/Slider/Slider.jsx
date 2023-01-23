@@ -6,22 +6,22 @@ import React, { useRef, useState } from "react";
 import { Pagination } from "swiper";
 import { mySkills } from "../../components/SoftwareSkill";
 import { RiFlutterFill } from "react-icons/ri";
-
-
+import ReusableButton from "../../components/Buttons/ReusableButton";
+import portfolio from "../../assets/portfolio.gif";
+import chatbotdemo from "../../assets/chatbotdemo.gif";
 
 export default function Slider() {
-  let project1 = []
-  let project2 = []
-  let project3 = []
+  let project1 = [];
+  let project2 = [];
+  let project3 = [];
   //0=html, 1=css, 2=sass, 3=js, 4=react, 5=python, 6=git, 7=sql, 8=figma, 9=firebase
   for (let i = 0; i < mySkills.softwareSkills.length; i++) {
     if (i === 0 || i === 1 || i === 3 || i === 6)
-      project1.push(mySkills.softwareSkills[i])
+      project1.push(mySkills.softwareSkills[i]);
     if (i === 4 || i === 3 || i === 0 || i === 2)
-      project2.push(mySkills.softwareSkills[i])
+      project2.push(mySkills.softwareSkills[i]);
     if (i === 0 || i === 1 || i === 3)
-      project3.push(mySkills.softwareSkills[i])
-
+      project3.push(mySkills.softwareSkills[i]);
   }
 
   return (
@@ -30,11 +30,12 @@ export default function Slider() {
       initial={{ opacity: 0, x: 0 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ type: "easeIn", duration: 2, delay: 0.1 }}
-      className="container-slider">
+      className="container-slider"
+    >
       <h1>Projects</h1>
       <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
+        spaceBetween={40}
+        slidesPerView={2}
         pagination={{ clickable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
@@ -42,46 +43,82 @@ export default function Slider() {
         className="mySwiper"
       >
         <SwiperSlide>
-
-          <ul className="project-icons">
-            {project1.map((skills, i) => {
-              return (
-                <motion.li
-                  viewport={{ once: true }}
-                  initial={{ opacity: 0.1 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ type: "easein", duration: 1, delay: i * 0.15 }}
-                  key={i}
-                  className="skill"
-                  name={skills.skill}
-                >
-                  <i className={skills.fontAwesome}></i>
-
-                </motion.li>
-              );
-            })}
-          </ul>
+          <div className="project-body">
+            <h2>AI Chatbot</h2>
+            <ul className="project-icons">
+              {project1.map((skills, i) => {
+                return (
+                  <motion.li
+                    viewport={{ once: true }}
+                    initial={{ opacity: 0.1 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      type: "easein",
+                      duration: 1,
+                      delay: i * 0.15,
+                    }}
+                    key={i}
+                    className="skill"
+                    name={skills.skill}
+                  >
+                    <i className={skills.fontAwesome}></i>
+                  </motion.li>
+                );
+              })}
+            </ul>
+            <img src={chatbotdemo} alt="chatbotdemo" id="portfolio-img" />
+            <ReusableButton
+              className="project-button"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=share_link",
+                  "_blank"
+                )
+              }
+            >
+              Show on Github
+            </ReusableButton>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <ul className="project-icons">
-            {project2.map((skills, i) => {
-              return (
-                <motion.li
-                  viewport={{ once: true }}
-                  initial={{ opacity: 0.1 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ type: "easein", duration: 1, delay: i * 0.15 }}
-                  key={i}
-                  className="skill"
-                  name={skills.skill}
-                >
-                  <i className={skills.fontAwesome}></i>
-
-                </motion.li>
-              );
-            })}
-          </ul>
+          <div className="project-body">
+            <h2>Portfolio Website</h2>
+            <ul className="project-icons">
+              {project2.map((skills, i) => {
+                return (
+                  <motion.li
+                    viewport={{ once: true }}
+                    initial={{ opacity: 0.1 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                      type: "easein",
+                      duration: 1,
+                      delay: i * 0.15,
+                    }}
+                    key={i}
+                    className="skill"
+                    name={skills.skill}
+                  >
+                    <i className={skills.fontAwesome}></i>
+                  </motion.li>
+                );
+              })}
+            </ul>
+            <img src={portfolio} alt="portfolio" id="portfolio-img" />
+            <ReusableButton
+              className="project-button"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=share_link",
+                  "_blank"
+                )
+              }
+            >
+              Show on Github
+            </ReusableButton>
+          </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <div className="project-body">
             <h2>Recipe Generator App</h2>
@@ -94,7 +131,11 @@ export default function Slider() {
                     viewport={{ once: true }}
                     initial={{ opacity: 0.1 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ type: "easein", duration: 1, delay: i * 0.15 }}
+                    transition={{
+                      type: "easein",
+                      duration: 1,
+                      delay: i * 0.15,
+                    }}
                     key={i}
                     className="skill"
                     name={skills.skill}
@@ -104,9 +145,7 @@ export default function Slider() {
                 );
               })}
             </ul>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.75 }}
+            <ReusableButton
               className="project-button"
               onClick={() =>
                 window.open(
@@ -116,9 +155,8 @@ export default function Slider() {
               }
             >
               Show on Github
-            </motion.button>
+            </ReusableButton>
           </div>
-
         </SwiperSlide>
       </Swiper>
     </motion.div>
