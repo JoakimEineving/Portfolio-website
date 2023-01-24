@@ -68,7 +68,7 @@ const About = () => {
             job opportunity that you want to discuss with me (summer/fall 2023), please
             don't hesitate to contact me. I made this website as a complement to
             my CV so feel free to also check that out. Below are some of the
-            technologies I've worked with.
+            technologies and some projects of choice that I've worked with.
           </p>
         </motion.div>
       </div>

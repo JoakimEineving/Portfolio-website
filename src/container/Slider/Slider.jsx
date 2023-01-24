@@ -2,13 +2,10 @@ import "./Slider.scss";
 import "swiper/css/bundle";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Pagination } from "swiper";
 import { mySkills } from "../../components/SoftwareSkill";
-import { RiFlutterFill } from "react-icons/ri";
-import ReusableButton from "../../components/Buttons/ReusableButton";
-import portfolio from "../../assets/portfolio.gif";
-import chatbotdemo from "../../assets/chatbotdemo.gif";
+
 import SwiperSlideContent from "./SwiperSlideContent";
 
 
@@ -40,14 +37,14 @@ export default function Slider() {
         spaceBetween={40}
         slidesPerView={3}
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
         modules={[Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
           <SwiperSlideContent 
-            project1={project1} 
+            project3={project3} 
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -57,7 +54,7 @@ export default function Slider() {
         </SwiperSlide>
         <SwiperSlide>
           <SwiperSlideContent 
-            project3={project3} 
+            project1={project1} 
           />
         </SwiperSlide>
       </Swiper>

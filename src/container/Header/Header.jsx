@@ -19,7 +19,7 @@ const Header = () => {
     };
   }, []);
 
-  const { ref, inView } = useInView({ threshold: 0.9 });
+  const { ref, inView } = useInView({ threshold: 0.8 });
   const animation = useAnimation();
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const Header = () => {
             /> */}
           </h1>
           <h2>IT-Student / Developer / Photographer</h2>
-          
+
           <motion.div
             id="icons"
             animate={{ rotate: 360 }}
@@ -99,7 +99,6 @@ const Header = () => {
             <path class="a2" d="M0 20 L30 52 L60 20"></path>
             <path class="a3" d="M0 40 L30 72 L60 40"></path>
           </motion.svg>
-
         </div>
       </div>
     </>

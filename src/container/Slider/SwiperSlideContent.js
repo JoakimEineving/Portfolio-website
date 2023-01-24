@@ -4,7 +4,7 @@ import { RiFlutterFill } from "react-icons/ri";
 import ReusableButton from "../../components/Buttons/ReusableButton";
 import portfolio from "../../assets/portfolio.gif";
 import chatbotdemo from "../../assets/chatbotdemo.gif";
-import flutterexample from "../../assets/flutterexample.jpg";
+import flutterdemo from "../../assets/flutterdemo.jpg";
 
 const SwiperSlideContent = (props) => {
   const { project1, project2, project3 } = props;
@@ -18,19 +18,19 @@ const SwiperSlideContent = (props) => {
     image = chatbotdemo;
     name = "AI Chatbot";
     link =
-      "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=share_link";
+      "https://github.com/JoakimEineving/ChatGPT-AI";
   } else if (project2) {
     project = project2;
     image = portfolio;
     name = "Portfolio";
     link =
-      "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=share_link";
+      "https://github.com/JoakimEineving/Portfolio-website";
   } else if (project3) {
     project = project3;
-    image = flutterexample;
+    image = flutterdemo;
     name = "Recipe App";
     link =
-      "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=share_link";
+      "https://github.com/JoakimEineving/Recipe-App-V2";
   }
   return (
     <div className="project-body">
@@ -60,7 +60,10 @@ const SwiperSlideContent = (props) => {
       <img src={image} id="project-img" />
       <ReusableButton
         className="project-button"
-        onClick={() => window.open({ link }, "_blank")}
+        onClick={() => window.open(
+          `${link}`,
+          "_blank"
+        )}
       >
         Show on Github
       </ReusableButton>
