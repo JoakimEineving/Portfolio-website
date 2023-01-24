@@ -1,7 +1,17 @@
-import React from "react";
-import { About, Footer, Experience, Header, Skills, Particles, Slider } from "./container";
-import { Navbar } from "./components";
 import './App.scss';
+
+import React from "react";
+
+import {Navbar} from "./components";
+import {
+  About,
+  Experience,
+  Footer,
+  Header,
+  Particles,
+  Skills,
+  Slider
+} from "./container";
 
 const App = () => {
   document.title = "Joakim's Portfolio";
