@@ -1,3 +1,13 @@
+.container-projects {
+  text-align: center;
+  background: var(--background-color);
+  color: var(--third-color);
+  display: flex;
+  z-index: 2;
+
+  position: relative;
+}
+
 .container-slider {
   width: 100%;
   height: 100%;
@@ -10,18 +20,19 @@
   position: relative;
   padding: 20px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1450px) {
     display: none;
   }
+  
 
   h1 {
     padding-bottom: 30px;
   }
 
   h2 {
-    padding-bottom: 10px;
     width: auto;
     overflow: hidden;
+    margin-bottom: 0;
   }
 }
 
@@ -37,13 +48,6 @@
   position: relative;
   padding: 20px;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: flex;
-    flex-direction: column;
-  }
 
 
   h1 {
@@ -52,8 +56,15 @@
 }
 
 .swiper {
-  width: 60vw;
+  width: 60%;
   height: 40vh;
+  @media screen and (min-height: 1200px) {
+    height: 480px;
+  }
+  @media screen and (max-height: 1200px) {
+    max-height: 480px;
+  }
+
 }
 
 .swiper-wrapper {
@@ -66,6 +77,8 @@
   font-size: 18px;
   background: var(--background-color);
   border: 1px solid var(--secondary-color);
+  
+
 
   /* Center slide text vertically */
   // display: -webkit-box;
@@ -96,22 +109,20 @@
   display: flex;
   overflow: hidden;
   overflow-x: auto;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-self: flex-end;
-  height: 100%;
+
+
   justify-content: center;
   list-style: none;
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 2rem;
-  position: absolute;
+
 }
 
 .flutter {
   color: var(--third-color);
-  font-size: 40px;
-  margin-bottom: 7px;
+  font-size: 33px;
+  margin-top: 15px;
   margin-left: 2px;
   display: block;
 
@@ -143,7 +154,20 @@
   }
 }
 
-#portfolio-img {
-  width: 70%;
-  height: 70%;
+
+#project-img {
+  width: 96%;
+  height: 54%;
+  display: block;
+  
+  object-fit: contain;
+
+  
+  
+  
+  
+
+ 
+  
 }
+

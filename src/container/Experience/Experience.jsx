@@ -11,7 +11,7 @@ import {
 
 const Experience = () => {
   return (
-    <div className="container-experience" id="experience">
+    <div className="container-experience">
       <motion.div
         class="container"
         viewport={{ once: true }}
@@ -68,7 +68,7 @@ const Experience = () => {
             className="button"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=share_link",
+                "https://drive.google.com/file/d/1m6IvNzKqYpk-lKNaemudQ7E5WY2vqX_1/view",
                 "_blank"
               )
             }

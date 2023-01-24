@@ -12,7 +12,7 @@ const Footer = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ type: "easeIn", duration: 1, delay: 0.1 }}
       >
-        <p>Joakim Eineving © Copyright 2022</p>
+        <p>Joakim Eineving © Copyright 2023</p>
       </motion.div>
     </div>
   );
