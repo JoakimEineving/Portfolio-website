@@ -9,6 +9,8 @@ import { RiFlutterFill } from "react-icons/ri";
 import ReusableButton from "../../components/Buttons/ReusableButton";
 import portfolio from "../../assets/portfolio.gif";
 import chatbotdemo from "../../assets/chatbotdemo.gif";
+import SwiperSlideContent from "./SwiperSlideContent";
+
 
 export default function Slider() {
   let project1 = [];
@@ -20,7 +22,7 @@ export default function Slider() {
       project1.push(mySkills.softwareSkills[i]);
     if (i === 5 || i === 3 || i === 0 || i === 2 || i === 6)
       project2.push(mySkills.softwareSkills[i]);
-    if (i === 0 || i === 9 || i === 6)
+    if (i === 9 || i === 6)
       project3.push(mySkills.softwareSkills[i]);
   }
 
@@ -44,160 +46,20 @@ export default function Slider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="project-body">
-            <h2>AI Chatbot</h2>
-            <ul className="project-icons">
-              {project1.map((skills, i) => {
-                return (
-                  <motion.li
-                    viewport={{ once: true }}
-                    initial={{ opacity: 0.1 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                      type: "easein",
-                      duration: 1,
-                      delay: i * 0.15,
-                    }}
-                    key={i}
-                    className="skill"
-                    name={skills.skill}
-                  >
-                    <i className={skills.fontAwesome}></i>
-                  </motion.li>
-                );
-              })}
-            </ul>
-            <img src={chatbotdemo} alt="chatbotdemo" id="project-img" />
-            <ReusableButton
-              className="project-button"
-              onClick={() =>
-                window.open(
-                  "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=share_link",
-                  "_blank"
-                )
-              }
-            >
-              Show on Github
-            </ReusableButton>
-          </div>
+          <SwiperSlideContent 
+            project1={project1} 
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="project-body">
-            <h2>Portfolio</h2>
-            <ul className="project-icons">
-              {project2.map((skills, i) => {
-                return (
-                  <motion.li
-                    viewport={{ once: true }}
-                    initial={{ opacity: 0.1 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                      type: "easein",
-                      duration: 1,
-                      delay: i * 0.15,
-                    }}
-                    key={i}
-                    className="skill"
-                    name={skills.skill}
-                  >
-                    <i className={skills.fontAwesome}></i>
-                  </motion.li>
-                );
-              })}
-            </ul>
-            <img src={portfolio} alt="portfolio" id="project-img" />
-            <ReusableButton
-              className="project-button"
-              onClick={() =>
-                window.open(
-                  "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=share_link",
-                  "_blank"
-                )
-              }
-            >
-              Show on Github
-            </ReusableButton>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="project-body">
-            <h2>Recipe App</h2>
-            <ul className="project-icons">
-              <RiFlutterFill className="flutter" />
-              {project3.map((skills, i) => {
-                return (
-                  <motion.li
-                    viewport={{ once: true }}
-                    initial={{ opacity: 0.1 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                      type: "easein",
-                      duration: 1,
-                      delay: i * 0.15,
-                    }}
-                    key={i}
-                    className="skill"
-                    name={skills.skill}
-                  >
-                    <i className={skills.fontAwesome}></i>
-                  </motion.li>
-                );
-              })}
-            </ul>
-            <ReusableButton
-              className="project-button"
-              onClick={() =>
-                window.open(
-                  "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=share_link",
-                  "_blank"
-                )
-              }
-            >
-              Show on Github
-            </ReusableButton>
-          </div>
+          <SwiperSlideContent 
+            project2={project2} 
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <div className="project-body">
-            <h2>Recipe App</h2>
-            {/* <img src="https://appradar.com/wp-content/uploads/wpe-uploads/Screenshots-in-App-Store-Search-iOS11-iOS10-1-2.jpg"></img> */}
-            <ul className="project-icons">
-              <RiFlutterFill className="flutter" />
-              {project3.map((skills, i) => {
-                return (
-                  <motion.li
-                    viewport={{ once: true }}
-                    initial={{ opacity: 0.1 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                      type: "easein",
-                      duration: 1,
-                      delay: i * 0.15,
-                    }}
-                    key={i}
-                    className="skill"
-                    name={skills.skill}
-                  >
-                    <i className={skills.fontAwesome}></i>
-                  </motion.li>
-                );
-              })}
-            </ul>
-            <ReusableButton
-              className="project-button"
-              onClick={() =>
-                window.open(
-                  "https://drive.google.com/file/d/1nmTHyosEO99c-fRQozXfHEpaAZj2AIhL/view?usp=share_link",
-                  "_blank"
-                )
-              }
-            >
-              Show on Github
-            </ReusableButton>
-          </div>
+          <SwiperSlideContent 
+            project3={project3} 
+          />
         </SwiperSlide>
-        
       </Swiper>
     </motion.div>
     </div>
