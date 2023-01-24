@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./Header.scss";
-import AnimatedLetters from "../../components/AnimatedLetters";
+import AnimatedLetters from "../../components/AnimatedLetters/Letters.jsx";
 import { react, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -59,7 +59,7 @@ const Header = () => {
             /> */}
           </h1>
           <h2>IT-Student / Developer / Photographer</h2>
-          {/* <Link to="" className='flat-button'>CONTACT ME</Link> */}
+          
           <motion.div
             id="icons"
             animate={{ rotate: 360 }}

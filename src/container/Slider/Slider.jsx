@@ -20,9 +20,9 @@ export default function Slider() {
   for (let i = 0; i < mySkills.softwareSkills.length; i++) {
     if (i === 0 || i === 3 || i === 4 || i === 6)
       project1.push(mySkills.softwareSkills[i]);
-    if (i === 5 || i === 3 || i === 0 || i === 2 || i === 6)
+    if (i === 5 || i === 0 || i === 2 || i === 6)
       project2.push(mySkills.softwareSkills[i]);
-    if (i === 9 || i === 6)
+    if (i === 9 || i === 6 || i === 7)
       project3.push(mySkills.softwareSkills[i]);
   }
 

@@ -53,18 +53,26 @@
 
 .arrows {
   width: 60px;
-  height: 72px;
+  height: 78px;
   position: absolute;
   left: 50%;
   margin-left: -30px;
   bottom: 20px;
-  animation: fadeIn 1.8s 3.5s backwards;
+  z-index: 100;
+
+  @media screen and (max-width: 767px) {
+    _::-webkit-full-page-media, _:future, :root .safari_only {
+        padding-bottom: 65px; //resize 
+    }
+}
+
+  // animation: fadeIn 1.8s 3.5s backwards;
 }
 
 .arrows path {
   stroke: var(--white-color);
   fill: transparent;
-  stroke-width: 1px;
+  stroke-width: 3px;
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite;
 }
@@ -74,7 +82,7 @@
     opacity: 0;
   }
   40% {
-    opacity: 1;
+    opacity: 0.5;
   }
   80% {
     opacity: 0;
@@ -89,7 +97,7 @@
     opacity: 0;
   }
   40% {
-    opacity: 1;
+    opacity: 0.5;
   }
   80% {
     opacity: 0;
