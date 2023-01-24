@@ -1,8 +1,8 @@
-import './App.scss';
+import "./App.scss";
 
 import React from "react";
 
-import {Navbar} from "./components";
+import { Navbar } from "./components";
 import {
   About,
   Experience,
@@ -10,7 +10,7 @@ import {
   Header,
   Particles,
   Skills,
-  Slider
+  Slider,
 } from "./container";
 
 const App = () => {

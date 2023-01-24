@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const ReusableButton = (props) => {
   return (
@@ -12,6 +12,6 @@ const ReusableButton = (props) => {
       {props.children}
     </motion.button>
   );
-}
+};
 
 export default ReusableButton;
