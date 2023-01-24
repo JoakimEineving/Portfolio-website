@@ -2,9 +2,21 @@ import { motion } from "framer-motion";
 import React from "react";
 import { RiFlutterFill } from "react-icons/ri";
 
-const mySkills = {
+export const mySkills = {
   //fontawesome stylesheet in index.html
   softwareSkills: [
+    {
+      skill: "JavaScript",
+      fontAwesome: "fab fa-js",
+    },
+    {
+      skill: "Python",
+      fontAwesome: "fab fa-python",
+    },
+    {
+      skill: "React",
+      fontAwesome: "fab fa-react",
+    },
     {
       skill: "HTML",
       fontAwesome: "fab fa-html5",
@@ -16,18 +28,6 @@ const mySkills = {
     {
       skill: "Sass",
       fontAwesome: "fab fa-sass",
-    },
-    {
-      skill: "JavaScript",
-      fontAwesome: "fab fa-js",
-    },
-    {
-      skill: "React",
-      fontAwesome: "fab fa-react",
-    },
-    {
-      skill: "Python",
-      fontAwesome: "fab fa-python",
     },
     {
       skill: "Git",

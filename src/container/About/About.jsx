@@ -65,10 +65,10 @@ const About = () => {
           <p className="title-text">
             I'm passionate about programming, new technology and IT in general.
             I'm always looking for new challenges, so if you have a project or a
-            job opportunity that you want to offer me (summer/fall 2023), please
+            job opportunity that you want to discuss with me (summer/fall 2023), please
             don't hesitate to contact me. I made this website as a complement to
             my CV so feel free to also check that out. Below are some of the
-            technologies I've worked with.
+            technologies and some projects of choice that I've worked with.
           </p>
         </motion.div>
       </div>

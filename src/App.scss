@@ -19,7 +19,9 @@
     align-items: center;
   }
   
-
+  *::-webkit-scrollbar {
+    display: none;
+  }
 
 @font-face {
   font-family: 'Helvetica Neue';

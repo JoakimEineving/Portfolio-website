@@ -18,7 +18,7 @@
 .home-page {
   margin: 0;
   text-align: center;
-  
+
   .text-zone {
     position: absolute;
     top: 50%;
@@ -48,23 +48,31 @@
     letter-spacing: 3px;
     animation: fadeIn 1s 2.5s backwards;
   }
-  
 }
 
 .arrows {
   width: 60px;
-  height: 72px;
+  height: 78px;
   position: absolute;
   left: 50%;
   margin-left: -30px;
   bottom: 20px;
+  z-index: 100;
   animation: fadeIn 1.8s 3.5s backwards;
+
+  @media screen and (max-width: 767px) {
+    _::-webkit-full-page-media,
+    _:future,
+    :root .safari_only {
+      padding-bottom: 65px; //resize
+    }
+  }
 }
 
 .arrows path {
   stroke: var(--white-color);
   fill: transparent;
-  stroke-width: 1px;
+  stroke-width: 3px;
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite;
 }
@@ -74,7 +82,7 @@
     opacity: 0;
   }
   40% {
-    opacity: 1;
+    opacity: 0.5;
   }
   80% {
     opacity: 0;
@@ -89,7 +97,7 @@
     opacity: 0;
   }
   40% {
-    opacity: 1;
+    opacity: 0.5;
   }
   80% {
     opacity: 0;
@@ -121,7 +129,6 @@
   gap: 15px;
   padding: 0.2rem;
   animation: fadeIn 1s 3s backwards;
-  
 
   .btn {
     font-size: 35px;
@@ -129,7 +136,6 @@
     border: none;
     background: none;
     cursor: pointer;
-    
   }
 }
 
@@ -142,7 +148,6 @@
 }
 .github {
   color: var(--third-color);
-  
 
   &:hover {
     color: var(--secondary-color);

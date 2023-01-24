@@ -4,5 +4,6 @@ export { default as Header } from './Header/Header';
 export { default as Skills } from './Skills/Skills';
 export { default as Experience } from './Experience/Experience';
 export { default as Particles } from '../components/Particles/Particles';
+export { default as Slider } from './Slider/Slider';
 
 
