@@ -1,6 +1,5 @@
 import { React } from "react";
 import { motion } from "framer-motion";
-
 import "./Experience.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/free-solid-svg-icons";
