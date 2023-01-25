@@ -47,12 +47,11 @@ const Experience = () => {
             <h2>HCL Technologies</h2>
             <p className="text-container">2021-Present</p>
             <p className="text-container">Mainframe Operations Analyst</p>
-            AHS Mainframe Core Operations is responsible for monitoring and
-            operation of a large number of Mainframe / z / OS machines
-            worldwide. We monitor the environments, take care of infrastructure
-            problems, correct batch and application-abends and have close
-            contact with technicians all over the world. (Previously Volvo IT,
-            acquired by HCL Technologies 2016)
+            AHS Mainframe Core Operations is responsible for monitoring and operation of a large number of
+Mainframe z/OS machines worldwide. My work involves monitoring the environments, taking care of
+infrastructure problems, correct batch and application-abends and having close contact with engineers all
+over the world.
+            
           </div>
         </div>
         <motion.div

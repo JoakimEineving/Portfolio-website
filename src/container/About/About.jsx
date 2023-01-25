@@ -4,45 +4,6 @@ import { motion } from "framer-motion";
 import "./About.scss";
 
 const About = () => {
-  const calculateTimeLeft = () => {
-    const difference = +new Date(`2023-06-01`) - +new Date();
-    let timeLeft = {};
-
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        and: " ",
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-      };
-    }
-
-    return timeLeft;
-  };
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const [year] = useState(new Date().getFullYear());
-
-  useEffect(() => {
-    setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-  });
-
-  const timerComponents = [];
-
-  Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
-      return;
-    }
-
-    timerComponents.push(
-      <span>
-        {" "}
-        {timeLeft[interval]} {interval}
-      </span>
-    );
-  });
   return (
     <>
       <div className="container-about" id="about">
@@ -55,20 +16,19 @@ const About = () => {
         >
           <h1>About Me</h1>
           <p className="title-text">
-            I'm a 24-year-old student from Gothenburg, Sweden. I'm currently
-            studying for a Bachelor's degree in Information Systems at the
-            University of Gothenburg and graduating in
-            {timerComponents.length ? timerComponents : <span></span>}. Besides
-            studying I am also working as a Mainframe Operations Analyst at HCL
-            Technologies and occasionally I do freelance photography.
+            As a 24-year-old student from Gothenburg, Sweden, I am pursuing a
+            Bachelor's degree in Information Systems at the University of
+            Gothenburg. In addition to my studies, I am also working as a
+            Mainframe Operations Analyst at HCL Technologies and occasionally
+            take on freelance photography projects. 
           </p>
           <p className="title-text">
-            I'm passionate about programming, new technology and IT in general.
-            I'm always looking for new challenges, so if you have a project or a
-            job opportunity that you want to discuss with me (summer/fall 2023), please
-            don't hesitate to contact me. I made this website as a complement to
-            my CV so feel free to also check that out. Below are some of the
-            technologies and some projects of choice that I've worked with.
+            My passion lies in programming, new technology, and IT in general. I
+            am always seeking new challenges, and if you have a project or job
+            opportunity that you would like to discuss with me (for summer/fall
+            2023), please don't hesitate to reach out. This website serves as a
+            complement to my CV, so feel free to take a look. Below, you'll find
+            a list of some of the technologies and projects I've worked with.
           </p>
         </motion.div>
       </div>
