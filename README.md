@@ -37,4 +37,5 @@ $ npm start
 * [x] Front-Page
 * [x] About-Section
 * [x] Experience-Section
-* [ ] Projects-Section
+* [x] Projects-Section
+* [ ] Make Projects-Section work for mobile
