@@ -57,7 +57,7 @@ const SwiperSlideContent = (props) => {
           );
         })}
       </ul>
-      <img src={image} id="project-img" />
+      <img src={image} id="project-img" alt="project" />
       <ReusableButton
         className="project-button"
         onClick={() => window.open(

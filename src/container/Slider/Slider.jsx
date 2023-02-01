@@ -15,11 +15,11 @@ export default function Slider() {
   let project3 = [];
   // 0=javascript, 1=python, 2=react, 3=html, 4=css, 5=sass, 6=git, 7=sql, 8=figma, 9=firebase
   for (let i = 0; i < mySkills.softwareSkills.length; i++) {
-    if (i === 0 || i === 3 || i === 4 || i === 6)
+    if (i === 0 || i === 3 || i === 4 || i === 6 || i === 7 || i === 9)
       project1.push(mySkills.softwareSkills[i]);
-    if (i === 5 || i === 0 || i === 2 || i === 6)
+    if (i === 5 || i === 0 || i === 2 || i === 9)
       project2.push(mySkills.softwareSkills[i]);
-    if (i === 9 || i === 6 || i === 7)
+    if (i === 9 || i === 6 || i === 8)
       project3.push(mySkills.softwareSkills[i]);
   }
 

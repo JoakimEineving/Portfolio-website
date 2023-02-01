@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React} from "react";
 import { motion } from "framer-motion";
 
 import "./About.scss";
@@ -27,8 +27,8 @@ const About = () => {
             am always seeking new challenges, and if you have a project or job
             opportunity that you would like to discuss with me (for summer/fall
             2023), please don't hesitate to reach out. This website serves as a
-            complement to my CV, so feel free to take a look. Below, you'll find
-            a list of some of the technologies and projects I've worked with.
+            complement to my CV, so feel free to check that out as well. Below, you'll find
+            a list of some technologies and projects I've worked with.
           </p>
         </motion.div>
       </div>

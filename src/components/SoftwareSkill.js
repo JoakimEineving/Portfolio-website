@@ -29,22 +29,24 @@ export const mySkills = {
       skill: "Sass",
       fontAwesome: "fab fa-sass",
     },
+
     {
-      skill: "Git",
-      fontAwesome: "fab fa-git-alt",
-    },
-    {
-      skill: "SQL",
+      skill: "Databases",
       fontAwesome: "fas fa-database",
     },
     {
-      skill: "Figma",
-      fontAwesome: "fab fa-figma",
+      skill: "Node.js",
+      fontAwesome: "fab fa-node-js",
     },
     {
       skill: "Firebase",
       fontAwesome: "fas fa-fire",
     },
+    {
+      skill: "Git",
+      fontAwesome: "fab fa-git-alt",
+    },
+
   ],
 };
 
