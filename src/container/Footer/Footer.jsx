@@ -1,4 +1,4 @@
-import React, {useState, useEffect}from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./Footer.scss";
 
@@ -21,7 +21,7 @@ const Footer = () => {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-  const [year] = useState(new Date().getFullYear());
+  // const [year] = useState(new Date().getFullYear());
 
   useEffect(() => {
     setTimeout(() => {
@@ -52,8 +52,10 @@ const Footer = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ type: "easeIn", duration: 1, delay: 0.1 }}
       >
-        
-        <p>{timerComponents.length ? timerComponents : <span></span>} left until I graduate 👋</p>
+        <p>
+          {timerComponents.length ? timerComponents : <span></span>} left until
+          I graduate 👋
+        </p>
       </motion.div>
     </div>
   );

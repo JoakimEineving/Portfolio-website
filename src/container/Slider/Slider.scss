@@ -23,7 +23,6 @@
   @media screen and (max-width: 1070px) {
     display: none;
   }
-  
 
   h1 {
     padding-bottom: 30px;
@@ -47,7 +46,7 @@
   z-index: 2;
   position: relative;
   padding: 20px;
-  
+
   h1 {
     padding-bottom: 30px;
   }
@@ -57,7 +56,6 @@
   width: 1000px;
   height: 380px;
 }
-
 
 .swiper-wrapper {
   display: flex;
@@ -69,7 +67,6 @@
   font-size: 18px;
   background: var(--background-color);
   border: 1px solid var(--secondary-color);
-
 
   &:hover {
     border: 2px solid var(--secondary-color);
@@ -93,17 +90,24 @@
   font-size: 2rem;
 }
 
-.flutter {
+.altIcon {
   color: var(--third-color);
-  font-size: 33px;
-  margin-top: 16px;
-  margin-left: 2px;
+  font-size: 36px;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 6px;
   display: block;
 
   &:hover {
     color: var(--secondary-color);
     transform: scale(1.1);
   }
+}
+
+#dart {
+  font-size: 31px;
+  margin-top: 17px;
+  margin-right: 9px;
 }
 
 .project-button {
@@ -128,11 +132,9 @@
   }
 }
 
-
 #project-img {
   width: 100%;
   height: 54%;
   display: block;
   object-fit: contain;
 }
-

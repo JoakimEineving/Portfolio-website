@@ -1,4 +1,4 @@
-import { React} from "react";
+import { React } from "react";
 import { motion } from "framer-motion";
 
 import "./About.scss";
@@ -20,15 +20,16 @@ const About = () => {
             Bachelor's degree in Information Systems at the University of
             Gothenburg. In addition to my studies, I am also working as a
             Mainframe Operations Analyst at HCL Technologies and occasionally
-            take on freelance photography projects. 
+            take on freelance photography projects.
           </p>
           <p className="title-text">
             My passion lies in programming, new technology, and IT in general. I
             am always seeking new challenges, and if you have a project or job
             opportunity that you would like to discuss with me (for summer/fall
             2023), please don't hesitate to reach out. This website serves as a
-            complement to my CV, so feel free to check that out as well. Below, you'll find
-            a list of some technologies and projects I've worked with.
+            complement to my CV, so feel free to check that out as well. Below,
+            you'll find a list of some technologies and projects I've worked
+            with.
           </p>
         </motion.div>
       </div>

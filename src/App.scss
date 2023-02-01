@@ -1,44 +1,44 @@
-@import 'animate.css';
+@import "animate.css";
 
 .app {
-    background-color: var(--background-color);
-    font-family: var(--font-base);
-  }
-  
-  .app__container {
-    width: 100%;
-    min-height: 100vh;
-  
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .app__flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  *::-webkit-scrollbar {
-    display: none;
-  }
+  background-color: var(--background-color);
+  font-family: var(--font-base);
+}
 
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+.app__container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 @font-face {
-  font-family: 'La Belle Aurore';
-  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+  font-family: "Helvetica Neue";
+  src: url("./assets/fonts/helvetica-neu.ttf") format("ttf");
 }
 
 @font-face {
-  font-family: 'Coolvetica';
-  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  font-family: "La Belle Aurore";
+  src: url("./assets/fonts/LaBelleAurore.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("./assets/fonts/CoolveticaRg-Regular.woff2") format("woff2");
 }
 
 input,
 textarea {
-  font-family: 'Helvetica Neue';
+  font-family: "Helvetica Neue";
 }

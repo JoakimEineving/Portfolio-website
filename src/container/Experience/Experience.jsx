@@ -7,6 +7,7 @@ import {
   faBriefcase,
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
+import ReusableButton from "../../components/Buttons/ReusableButton";
 
 const Experience = () => {
   return (
@@ -46,11 +47,11 @@ const Experience = () => {
             <h2>HCL Technologies</h2>
             <p className="text-container">2021-Present</p>
             <p className="text-container">Mainframe Operations Analyst</p>
-            AHS Mainframe Core Operations is responsible for monitoring and operation of a large number of
-Mainframe z/OS machines worldwide. My work involves monitoring the environments, taking care of
-infrastructure problems, correct batch and application-abends and having close contact with engineers all
-over the world.
-            
+            AHS Mainframe Core Operations is responsible for monitoring and
+            operation of a large number of Mainframe z/OS machines worldwide. My
+            work involves monitoring the environments, taking care of
+            infrastructure problems, correct batch and application-abends and
+            having close contact with engineers all over the world.
           </div>
         </div>
         <motion.div
@@ -60,9 +61,7 @@ over the world.
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ type: "easeIn", duration: 1, delay: 0.1 }}
         >
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.75 }}
+          <ReusableButton
             className="button"
             onClick={() =>
               window.open(
@@ -72,17 +71,15 @@ over the world.
             }
           >
             Full CV
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.75 }}
+          </ReusableButton>
+          <ReusableButton
             className="button"
             onClick={() =>
               (window.location = "mailto:joakim.eineving@gmail.com")
             }
           >
             Contact
-          </motion.button>
+          </ReusableButton>
         </motion.div>
         <div className="divider-experience"></div>
       </motion.div>

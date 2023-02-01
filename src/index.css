@@ -4,18 +4,16 @@
   --font-base: "DM Sans", sans-serif;
   --background-color: #000;
   --primary-color: #3f96ff00;
-  --secondary-color: #FEE715FF;
+  --secondary-color: #fee715ff;
   --third-color: #a2ad99;
   --fourth-color: #9f9f9f;
-  --animated-color: #FEE715FF;
+  --animated-color: #fee715ff;
 
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
- 
- 
 }
 
 * {
@@ -29,8 +27,7 @@ h1 {
   font-size: 53px;
   margin: 0;
   font-family: "Coolvetica";
-  font-weight: 400; 
-
+  font-weight: 400;
 }
 h2 {
   font-size: 1.3em;

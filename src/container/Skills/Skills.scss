@@ -22,7 +22,7 @@
       transform: scale(1.1);
     }
 
-    &:hover~p {
+    &:hover ~ p {
       color: var(--secondary-color);
       transform: scale(1.1);
     }
@@ -55,7 +55,7 @@
     font-size: 10px;
   }
 
-  i:hover~p {
+  i:hover ~ p {
     color: var(--secondary-color);
     transform: scale(1.1);
   }

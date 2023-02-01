@@ -46,7 +46,6 @@ export const mySkills = {
       skill: "Git",
       fontAwesome: "fab fa-git-alt",
     },
-
   ],
 };
 
@@ -66,7 +65,6 @@ export default function SoftwareSkill() {
               name={skills.skill}
             >
               <i className={skills.fontAwesome}></i>
-
               <p>{skills.skill}</p>
             </motion.li>
           );
