@@ -8,12 +8,11 @@ import { mySkills } from "../../components/SoftwareSkill";
 
 import SwiperSlideContent from "./SwiperSlideContent";
 
-
 export default function Slider() {
   let project1 = [];
   let project2 = [];
   let project3 = [];
-  // 0=javascript, 1=python, 2=react, 3=html, 4=css, 5=sass, 6=git, 7=sql, 8=figma, 9=firebase
+  // 0=javascript, 1=python, 2=react, 3=html, 4=css, 5=sass, 6=git, 7=databases, 8= node.js, 9=firebase 10 = git
   for (let i = 0; i < mySkills.softwareSkills.length; i++) {
     if (i === 0 || i === 3 || i === 4 || i === 6 || i === 7 || i === 9)
       project1.push(mySkills.softwareSkills[i]);
@@ -25,40 +24,34 @@ export default function Slider() {
 
   return (
     <div className="container-projects">
-    <motion.div
-      viewport={{ once: true }}
-      initial={{ opacity: 0, x: 0 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ type: "easeIn", duration: 2, delay: 0.1 }}
-      className="container-slider"
-    >
-      <h1>Projects</h1>
-      <Swiper
-        spaceBetween={40}
-        slidesPerView={3}
-        pagination={{ clickable: true }}
-        // onSwiper={(swiper) => console.log(swiper)}
-        // onSlideChange={() => console.log("slide change")}
-        modules={[Pagination]}
-        className="mySwiper"
+      <motion.div
+        viewport={{ once: true }}
+        initial={{ opacity: 0, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ type: "easeIn", duration: 2, delay: 0.1 }}
+        className="container-slider"
       >
-        <SwiperSlide>
-          <SwiperSlideContent 
-            project3={project3} 
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SwiperSlideContent 
-            project2={project2} 
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <SwiperSlideContent 
-            project1={project1} 
-          />
-        </SwiperSlide>
-      </Swiper>
-    </motion.div>
+        <h1>Projects</h1>
+        <Swiper
+          spaceBetween={40}
+          slidesPerView={3}
+          pagination={{ clickable: true }}
+          // onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log("slide change")}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <SwiperSlideContent project3={project3} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperSlideContent project2={project2} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperSlideContent project1={project1} />
+          </SwiperSlide>
+        </Swiper>
+      </motion.div>
     </div>
   );
 }
