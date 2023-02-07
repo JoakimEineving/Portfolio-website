@@ -38,4 +38,3 @@ $ npm start
 * [x] About-Section
 * [x] Experience-Section
 * [x] Projects-Section
-* [ ] Make Projects-Section work for mobile

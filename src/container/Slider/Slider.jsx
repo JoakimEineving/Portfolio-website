@@ -33,9 +33,21 @@ export default function Slider() {
       >
         <h1>Projects</h1>
         <Swiper
+          breakpoints={{
+            380: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1028: {
+              slidesPerView: 3,
+            },
+          }}
+        
           spaceBetween={40}
           slidesPerView={3}
-          pagination={{ clickable: true }}
+          pagination={{ clickable: true, el: ".swiper-custom-pagination" }}
           // onSwiper={(swiper) => console.log(swiper)}
           // onSlideChange={() => console.log("slide change")}
           modules={[Pagination]}
@@ -51,6 +63,7 @@ export default function Slider() {
             <SwiperSlideContent project1={project1} />
           </SwiperSlide>
         </Swiper>
+      <div className="swiper-custom-pagination"/>
       </motion.div>
     </div>
   );
