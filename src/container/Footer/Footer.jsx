@@ -31,13 +31,13 @@ const Footer = () => {
 
   const timerComponents = [];
 
-  Object.keys(timeLeft).forEach((interval) => {
+  Object.keys(timeLeft).forEach((interval, index) => {
     if (!timeLeft[interval]) {
       return;
     }
-
+  
     timerComponents.push(
-      <span>
+      <span key={index}>
         {" "}
         {timeLeft[interval]} {interval}
       </span>
@@ -52,7 +52,7 @@ const Footer = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ type: "easeIn", duration: 1, delay: 0.1 }}
       >
-        <p>
+        <p >
           {timerComponents.length ? timerComponents : <span></span>} left until
           I graduate 👋
         </p>

@@ -13,7 +13,7 @@ const Experience = () => {
   return (
     <div className="container-experience">
       <motion.div
-        class="container"
+        className="container"
         viewport={{ once: true }}
         initial={{ opacity: 0, x: 0 }}
         whileInView={{ opacity: 1, x: 0 }}
