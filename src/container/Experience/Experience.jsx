@@ -11,7 +11,7 @@ import ReusableButton from "../../components/Buttons/ReusableButton";
 
 const Experience = () => {
   return (
-    <div className="container-experience">
+    <div className="container-experience" id="experience">
       <motion.div
         className="container"
         viewport={{ once: true }}

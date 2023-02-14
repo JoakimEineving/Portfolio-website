@@ -23,7 +23,7 @@ export default function Slider() {
   }
 
   return (
-    <div className="container-projects">
+    <div className="container-projects" id="projects">
       <motion.div
         viewport={{ once: true }}
         initial={{ opacity: 0, x: 0 }}
