@@ -30,13 +30,12 @@ const SwiperSlideContent = (props) => {
     image = flutterdemo;
     name = "Recipe App";
     link = "https://github.com/JoakimEineving/Recipe-App-V2";
+  } else if (project4) {
+    project = project4;
+    image = ecommerce;
+    name = "E-commerce";
+    link = "https://github.com/JoakimEineving/e-commerce";
   }
- else if (project4) {
-  project = project4;
-  image = ecommerce;
-  name = "E-commerce";
-  link = "https://github.com/JoakimEineving/e-commerce";
-}
   return (
     <div className="project-body">
       <h2>{name}</h2>

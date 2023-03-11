@@ -47,11 +47,14 @@ export default function Slider() {
             1028: {
               slidesPerView: 3,
             },
+            1440: {
+              slidesPerView: 4,
+            },
             
           }}
         
           spaceBetween={40}
-          slidesPerView={3}
+          slidesPerView={4}
           pagination={{ clickable: true, el: ".swiper-custom-pagination" }}
           // onSwiper={(swiper) => console.log(swiper)}
           // onSlideChange={() => console.log("slide change")}

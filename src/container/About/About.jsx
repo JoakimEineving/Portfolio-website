@@ -24,7 +24,7 @@ const About = () => {
           </p>
           <p className="title-text">
             My passion lies in programming, new technology, and IT in general. I
-            am always seeking new challenges, and if you have a project or job
+            am always seeking new challenges, and if you have a job
             opportunity that you would like to discuss with me (for summer/fall
             2023), please don't hesitate to reach out. This website serves as a
             complement to my CV, so feel free to check that out as well. Below,
