@@ -82,7 +82,7 @@ export default function SoftwareSkill() {
           <p className="text">Flutter</p>
         </motion.li>
 
-        <div className="divider-skills"></div>
+        {/* <div className="divider-skills"></div> */}
       </ul>
     </div>
   );

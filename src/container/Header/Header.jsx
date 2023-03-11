@@ -2,7 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./Header.scss";
 import AnimatedLetters from "../../components/AnimatedLetters/Letters.jsx";
-import { react, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -34,7 +34,7 @@ const Header = () => {
         y: "-100vh",
       });
     }
-  }, [inView]);
+  });
 
   return (
     <>

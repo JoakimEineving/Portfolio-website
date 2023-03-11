@@ -6,9 +6,10 @@ import ReusableButton from "../../components/Buttons/ReusableButton";
 import portfolio from "../../assets/portfolio.gif";
 import chatbotdemo from "../../assets/chatbotdemo.gif";
 import flutterdemo from "../../assets/flutterdemo.jpg";
+import ecommerce from "../../assets/ecommerce.png";
 
 const SwiperSlideContent = (props) => {
-  const { project1, project2, project3 } = props;
+  const { project1, project2, project3, project4 } = props;
   let project = {};
   let image = {};
   let name = "";
@@ -30,6 +31,12 @@ const SwiperSlideContent = (props) => {
     name = "Recipe App";
     link = "https://github.com/JoakimEineving/Recipe-App-V2";
   }
+ else if (project4) {
+  project = project4;
+  image = ecommerce;
+  name = "E-commerce";
+  link = "https://github.com/JoakimEineving/e-commerce";
+}
   return (
     <div className="project-body">
       <h2>{name}</h2>

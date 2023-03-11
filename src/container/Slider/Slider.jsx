@@ -12,6 +12,8 @@ export default function Slider() {
   let project1 = [];
   let project2 = [];
   let project3 = [];
+  let project4 = [];
+ 
   // 0=javascript, 1=python, 2=react, 3=html, 4=css, 5=sass, 6=git, 7=databases, 8= node.js, 9=firebase 10 = git
   for (let i = 0; i < mySkills.softwareSkills.length; i++) {
     if (i === 0 || i === 3 || i === 4 || i === 6 || i === 7 || i === 9)
@@ -20,6 +22,8 @@ export default function Slider() {
       project2.push(mySkills.softwareSkills[i]);
     if (i === 9 || i === 6 || i === 8)
       project3.push(mySkills.softwareSkills[i]);
+    if (i === 0 || i === 2 || i === 7 || i === 6|| i === 9)
+      project4.push(mySkills.softwareSkills[i]);
   }
 
   return (
@@ -43,6 +47,7 @@ export default function Slider() {
             1028: {
               slidesPerView: 3,
             },
+            
           }}
         
           spaceBetween={40}
@@ -57,10 +62,13 @@ export default function Slider() {
             <SwiperSlideContent project3={project3} />
           </SwiperSlide>
           <SwiperSlide>
-            <SwiperSlideContent project2={project2} />
+            <SwiperSlideContent project4={project4} />
           </SwiperSlide>
           <SwiperSlide>
             <SwiperSlideContent project1={project1} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperSlideContent project2={project2} />
           </SwiperSlide>
         </Swiper>
       <div className="swiper-custom-pagination"/>

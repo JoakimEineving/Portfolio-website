@@ -65,7 +65,7 @@ const Experience = () => {
             className="button"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1-UROOEy987PduWeYkVoZ7xLdKN4do6KL/view?usp=sharing",
+                "https://drive.google.com/file/d/1ax0W06iT0khnhp663lIBlJvAWyKiXLgT/view?usp=sharing",
                 "_blank"
               )
             }
