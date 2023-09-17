@@ -2,6 +2,7 @@
   "name": "joakim-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://joakimeineving.github.io/Portfolio-website",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
@@ -27,6 +28,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -47,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
