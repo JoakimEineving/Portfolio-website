@@ -1,7 +1,7 @@
 import React from "react";
 import {
   About,
-  Footer,
+  // Footer,
   Experience,
   Header,
   Skills,
@@ -22,7 +22,7 @@ const App = () => {
       <Skills />
       <Slider />
       <Experience />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
