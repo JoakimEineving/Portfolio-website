@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/www.joakimeineving.com/static/css/main.b1b2a51a.css",
-    "main.js": "/www.joakimeineving.com/static/js/main.d71e6019.js",
-    "static/media/portfolio.gif": "/www.joakimeineving.com/static/media/portfolio.c1975e4a6512cb23579f.gif",
-    "static/media/chatbotdemo.gif": "/www.joakimeineving.com/static/media/chatbotdemo.df63b45c51af26329ae3.gif",
-    "static/media/ecommerce.png": "/www.joakimeineving.com/static/media/ecommerce.c68060cd1618160dfe25.png",
-    "static/media/flutterdemo.jpg": "/www.joakimeineving.com/static/media/flutterdemo.0bff5817b6964f20bbba.jpg",
-    "static/media/helvetica-neu.ttf": "/www.joakimeineving.com/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
-    "static/media/LaBelleAurore.woff2": "/www.joakimeineving.com/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
-    "static/media/CoolveticaRg-Regular.woff2": "/www.joakimeineving.com/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
-    "index.html": "/www.joakimeineving.com/index.html",
-    "main.b1b2a51a.css.map": "/www.joakimeineving.com/static/css/main.b1b2a51a.css.map",
-    "main.d71e6019.js.map": "/www.joakimeineving.com/static/js/main.d71e6019.js.map"
+    "main.css": "/static/css/main.6c793ebe.css",
+    "main.js": "/static/js/main.58e28bcf.js",
+    "static/media/portfolio.gif": "/static/media/portfolio.c1975e4a6512cb23579f.gif",
+    "static/media/chatbotdemo.gif": "/static/media/chatbotdemo.df63b45c51af26329ae3.gif",
+    "static/media/ecommerce.png": "/static/media/ecommerce.c68060cd1618160dfe25.png",
+    "static/media/flutterdemo.jpg": "/static/media/flutterdemo.0bff5817b6964f20bbba.jpg",
+    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/index.html",
+    "main.6c793ebe.css.map": "/static/css/main.6c793ebe.css.map",
+    "main.58e28bcf.js.map": "/static/js/main.58e28bcf.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1b2a51a.css",
-    "static/js/main.d71e6019.js"
+    "static/css/main.6c793ebe.css",
+    "static/js/main.58e28bcf.js"
   ]
 }
