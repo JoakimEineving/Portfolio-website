@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Portfolio-website/static/css/main.45314b05.css",
+    "main.js": "/Portfolio-website/static/js/main.4b951cf1.js",
+    "static/media/portfolio.gif": "/Portfolio-website/static/media/portfolio.c1975e4a6512cb23579f.gif",
+    "static/media/chatbotdemo.gif": "/Portfolio-website/static/media/chatbotdemo.df63b45c51af26329ae3.gif",
+    "static/media/ecommerce.png": "/Portfolio-website/static/media/ecommerce.c68060cd1618160dfe25.png",
+    "static/media/flutterdemo.jpg": "/Portfolio-website/static/media/flutterdemo.0bff5817b6964f20bbba.jpg",
+    "static/media/helvetica-neu.ttf": "/Portfolio-website/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/LaBelleAurore.woff2": "/Portfolio-website/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff2": "/Portfolio-website/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/Portfolio-website/index.html",
+    "main.45314b05.css.map": "/Portfolio-website/static/css/main.45314b05.css.map",
+    "main.4b951cf1.js.map": "/Portfolio-website/static/js/main.4b951cf1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45314b05.css",
+    "static/js/main.4b951cf1.js"
+  ]
+}
