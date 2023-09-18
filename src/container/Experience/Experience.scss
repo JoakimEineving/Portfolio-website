@@ -13,11 +13,11 @@
 
   align-items: center;
 
-  @media screen and(max-width:900px) {
+  @media screen and (max-width:900px) {
     padding: 0px;
   }
   h1 {
-    @media screen and(max-width:900px) {
+    @media screen and (max-width:900px) {
       padding-top: 15px;
     }
   }
@@ -28,7 +28,7 @@
   margin-left: 15%;
   margin-right: 15%;
 
-  @media screen and(max-width:900px) {
+  @media screen and (max-width:900px) {
     flex-flow: row wrap;
     width: 100%;
     margin-left: 0%;
@@ -46,7 +46,7 @@
   width: 100%;
 
   padding: 35px;
-  @media screen and(max-width:900px) {
+  @media screen and (max-width:900px) {
     padding: 5%;
   }
 

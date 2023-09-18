@@ -2,7 +2,7 @@
   "name": "joakim-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joakimeineving.github.io/Portfolio-website",
+  "homepage": "https://joakimeineving.com/",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
@@ -13,7 +13,6 @@
     "animate.css": "^4.1.1",
     "framer-motion": "^7.2.0",
     "loaders.css": "^0.1.2",
-    "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
@@ -21,6 +20,7 @@
     "react-loaders": "^3.0.1",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.2.4",
+    "sass": "^1.67.0",
     "swiper": "^8.4.5",
     "tsparticles": "^2.2.4",
     "web-vitals": "^2.1.4"
