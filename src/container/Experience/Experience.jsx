@@ -23,20 +23,25 @@ const Experience = () => {
         <div className="boxes">
           <div className="box">
             <FontAwesomeIcon
-              icon={faGraduationCap}
+              icon={faBriefcase}
               className="icon"
               title={"LinkedIn"}
             />
-            <h2>University of Gothenburg</h2>
-            <p className="text-container">2020-2023</p>
+            <h2>Bots & Friends</h2>
+            <p className="text-container">2023-Present</p>
             <p className="text-container">
-              Bachelor of Science - Information Systems
+              Automation Consultant
             </p>
-            The education includes among other things programming, databases,
-            human-computer interaction, artificial intelligence and information
-            technology from an organizational and management perspective.
-            Knowledge about digitalisation, IT systems as strategic support and
-            management of business changes linked to IT.
+            As an Automation Consultant, I specialize in optimizing business
+            processes by developing state-of-the-art automation solutions. My
+            day-to-day responsibilities center around development — coding,
+            debugging, and piecing together different components to create a
+            cohesive automation system. It's a collaborative effort that
+            involves close coordination with team members, project managers, and
+            key stakeholders. Together, we aim to meet project objectives in the
+            most effective and efficient manner possible. The solutions we
+            develop integrate seamlessly into existing systems, thereby driving
+            organizational efficiency and achieving targeted outcomes.
           </div>
           <div className="box">
             <FontAwesomeIcon
@@ -45,14 +50,31 @@ const Experience = () => {
               title={"LinkedIn"}
             />
             <h2>HCL Technologies</h2>
-            <p className="text-container">2021-Present</p>
+            <p className="text-container">2021-2023</p>
             <p className="text-container">Mainframe Operations Analyst</p>
             AHS Mainframe Core Operations is responsible for monitoring and
             operation of a large number of Mainframe z/OS machines worldwide. My
-            work involves monitoring the environments, taking care of
+            work involved monitoring the environments, taking care of
             infrastructure problems, correct batch and application-abends and
             having close contact with engineers all over the world.
           </div>
+        <div className="box">
+          <FontAwesomeIcon
+            icon={faGraduationCap}
+            className="icon"
+            title={"LinkedIn"}
+          />
+          <h2>University of Gothenburg</h2>
+          <p className="text-container">2020-2023</p>
+          <p className="text-container">
+            Bachelor of Science - Information Systems
+          </p>
+          The education included among other topics programming, databases,
+          human-computer interaction, artificial intelligence and information
+          technology from an organizational and management perspective.
+          Knowledge about digitalisation, IT systems as strategic support and
+          management of business changes linked to IT.
+            </div>
         </div>
         <motion.div
           className="button-container"
@@ -65,7 +87,7 @@ const Experience = () => {
             className="button"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1ax0W06iT0khnhp663lIBlJvAWyKiXLgT/view?usp=sharing",
+                "https://drive.google.com/file/d/1WAs18Xd9xZ9H68PrQDCemSESXz2juhUX/view?usp=sharing",
                 "_blank"
               )
             }

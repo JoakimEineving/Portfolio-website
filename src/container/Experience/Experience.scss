@@ -23,17 +23,25 @@
   }
 }
 .boxes {
+  flex-flow: row wrap;
   margin-top: 25px;
   display: flex;
   margin-left: 15%;
   margin-right: 15%;
 
   @media screen and (max-width:900px) {
-    flex-flow: row wrap;
+    // flex-flow: row wrap;
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
   }
+  @media screen and (min-width:1500px) {
+    // flex-flow: row wrap;
+    
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
 }
 .boxes:last-child {
   margin-top: 60px;

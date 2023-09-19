@@ -16,20 +16,21 @@ const About = () => {
         >
           <h1>About Me</h1>
           <p className="title-text">
-            As a 24-year-old student from Gothenburg, Sweden, I am pursuing a
-            Bachelor's degree in Information Systems at the University of
-            Gothenburg. In addition to my studies, I am also working as a
-            Mainframe Operations Analyst at HCL Technologies and occasionally
-            take on freelance photography projects.
+            Hi, I'm a 24-year-old from Gothenburg, Sweden. I recently finished
+            my Bachelor's degree in Information Systems at the University of
+            Gothenburg and have started working as an Automation Consultant. I
+            enjoy programming and have a general interest in emerging technology
+            and IT. I find it rewarding to apply technical skills to solve
+            problems, whether they're big or small.
           </p>
           <p className="title-text">
-            My passion lies in programming, new technology, and IT in general. I
-            am always seeking new challenges, and if you have a job
-            opportunity that you would like to discuss with me (for summer/fall
-            2023), please don't hesitate to reach out. This website serves as a
-            complement to my CV, so feel free to check that out as well. Below,
-            you'll find a list of some technologies and projects I've worked
-            with.
+            I'm not currently looking for a new job, but I always appreciate
+            connecting with people who share similar interests. This website is
+            a space where I share some of the programming projects I've worked
+            on and other tech-related activities. Feel free to take a look
+            around and get in touch if you'd like to chat or collaborate on
+            something interesting. Below, you'll find some of the technologies
+            and projects I've worked with.
           </p>
         </motion.div>
       </div>
