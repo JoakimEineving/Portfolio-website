@@ -6,7 +6,7 @@
   z-index: 2;
   display: flex;
   justify-content: center;
-  
+
   position: relative;
 }
 
@@ -92,14 +92,14 @@
   text-align: center;
   font-size: 18px;
   background: var(--background-color);
-  border: 1px solid var(--secondary-color);
+  border: 2px solid var(--third-color);
 
   &:hover {
     border: 2px solid var(--secondary-color);
     transition: border 0.2s ease-in;
   }
 }
-.swiper-custom-pagination{
+.swiper-custom-pagination {
   margin-top: 15px;
   display: flex;
   color: var(--third-color) !important;
