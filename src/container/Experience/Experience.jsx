@@ -8,8 +8,47 @@ import {
   faGraduationCap,
 } from "@fortawesome/free-solid-svg-icons";
 import ReusableButton from "../../components/Buttons/ReusableButton";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
+  const experiences = [
+    {
+      date: "2023 - Present",
+      icon: faBriefcase,
+      title: "Automation Consultant",
+      subtitle: "Bots & Friends",
+      description:
+        "As an Automation Consultant, I specialize in optimizing business processes by developing automation solutions. My day-to-day responsibilities center around development — coding, debugging, and piecing together different components to create a cohesive automation system.",
+    },
+    {
+      date: "2021 - 06/2023",
+      icon: faBriefcase,
+      title: "Mainframe Operations Analyst",
+      subtitle: "HCL Technologies",
+      description:
+        "AHS Mainframe Core Operations is responsible for monitoring and operation of a large number of Mainframe z/OS machines worldwide. My work involved monitoring the environments, taking care of infrastructure problems, correct batch and application-abends and having close contact with engineers all over the world.",
+    },
+    {
+      date: "03/2023 - 06/2023",
+      icon: faGraduationCap,
+      title: "Bachelor Thesis",
+      subtitle: "TietoEvry",
+      description:
+        "The thesis was conducted in collaboration with TietoEvry where we developed a course recommendation system for a university.",
+    },
+    {
+      date: "08/2020 - 06/2023",
+      icon: faGraduationCap,
+      title: "Bachelor of Science - Information Systems",
+      subtitle: "University of Gothenburg",
+      description:
+        "The education included among other topics programming, databases, human-computer interaction, artificial intelligence and information technology from an organizational and management perspective. Knowledge about digitalisation, IT systems as strategic support and management of business changes linked to IT.",
+    },
+  ];
   return (
     <div className="container-experience" id="experience">
       <motion.div
@@ -20,62 +59,51 @@ const Experience = () => {
         transition={{ type: "easeIn", duration: 1, delay: 0.1 }}
       >
         <h1>IT Experience</h1>
-        <div className="boxes">
-          <div className="box">
-            <FontAwesomeIcon
-              icon={faBriefcase}
-              className="icon"
-              title={"LinkedIn"}
-            />
-            <h2>Bots & Friends</h2>
-            <p className="text-container">2023-Present</p>
-            <p className="text-container">
-              Automation Consultant
-            </p>
-            As an Automation Consultant, I specialize in optimizing business
-            processes by developing state-of-the-art automation solutions. My
-            day-to-day responsibilities center around development — coding,
-            debugging, and piecing together different components to create a
-            cohesive automation system. It's a collaborative effort that
-            involves close coordination with team members, project managers, and
-            key stakeholders. Together, we aim to meet project objectives in the
-            most effective and efficient manner possible. The solutions we
-            develop integrate seamlessly into existing systems, thereby driving
-            organizational efficiency and achieving targeted outcomes.
-          </div>
-          <div className="box">
-            <FontAwesomeIcon
-              icon={faBriefcase}
-              className="icon"
-              title={"LinkedIn"}
-            />
-            <h2>HCL Technologies</h2>
-            <p className="text-container">2021-2023</p>
-            <p className="text-container">Mainframe Operations Analyst</p>
-            AHS Mainframe Core Operations is responsible for monitoring and
-            operation of a large number of Mainframe z/OS machines worldwide. My
-            work involved monitoring the environments, taking care of
-            infrastructure problems, correct batch and application-abends and
-            having close contact with engineers all over the world.
-          </div>
-        <div className="box">
-          <FontAwesomeIcon
-            icon={faGraduationCap}
-            className="icon"
-            title={"LinkedIn"}
-          />
-          <h2>University of Gothenburg</h2>
-          <p className="text-container">2020-2023</p>
-          <p className="text-container">
-            Bachelor of Science - Information Systems
-          </p>
-          The education included among other topics programming, databases,
-          human-computer interaction, artificial intelligence and information
-          technology from an organizational and management perspective.
-          Knowledge about digitalisation, IT systems as strategic support and
-          management of business changes linked to IT.
-            </div>
-        </div>
+        <VerticalTimeline lineColor={"var(--third-color)"}>
+          {experiences.map((exp, index) => (
+            <VerticalTimelineElement
+              key={index}
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                border: "1px solid var(--third-color)",
+                background: "var(--background-color)",
+                color: "#fff",
+                borderColor: "var(--third-color)",
+                boxShadow: "none",
+              }}
+              contentArrowStyle={{
+                borderRight: "7px solid  var(--third-color)",
+              }}
+              date={exp.date}
+              iconStyle={{
+                background: "var(--third-color)",
+                color: "var(--background-color)",
+                border: "1px solid var(--third-color)",
+              }}
+              icon={
+                <FontAwesomeIcon
+                  icon={exp.icon}
+                  className="icon"
+                  title={"LinkedIn"}
+                />
+              }
+            >
+              <h3
+                className="vertical-timeline-element-title"
+                style={{ color: "var(--secondary-color)" }}
+              >
+                {exp.title}
+              </h3>
+              <h4
+                className="vertical-timeline-element-subtitle"
+                style={{ color: "var(--third-color)" }}
+              >
+                {exp.subtitle}
+              </h4>
+              <p style={{ color: "var(--third-color)" }}>{exp.description}</p>
+            </VerticalTimelineElement>
+          ))}
+        </VerticalTimeline>
         <motion.div
           className="button-container"
           viewport={{ once: true }}
