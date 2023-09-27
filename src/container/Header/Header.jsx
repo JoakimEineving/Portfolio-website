@@ -8,8 +8,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const nameArray = [" ", "J", "o", "a", "k", "i", "m"];
-  // const jobArray = ["I", "T", " ", "S", "t", "u", "d", "e", "n", "t", "."];
+  const nameArray = [" ", "J", "o", "a", "k", "i", "m", " ", "E", "i", "n", "e", "v", "i", "n", "g"];
+  const jobArray = ["D", "e","v", " ", "P", "o", "r", "t", "f", "o", "l", "i", "o"];
   useEffect(() => {
     let timeoutId = setTimeout(() => {
       setLetterClass("text-animate-hover");
@@ -41,24 +41,25 @@ const Header = () => {
       <div className="container-header home-page" id="home">
         <div className="text-zone">
           <h1>
-            <span className={letterClass}>H</span>
+            {/* <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>
             <br />
             <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m </span>
+            <span className={`${letterClass} _14`}>'m </span> */}
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
               idx={15}
             />
-            {/* <br />
+            
+            <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
               idx={22}
-            /> */}
+            />
           </h1>
-          <h2>IT-Student / Developer / Photographer</h2>
+          <h2>Automation Consultant / Developer</h2>
 
           <motion.div
             id="icons"
