@@ -56,8 +56,6 @@ export default function Slider() {
           spaceBetween={40}
           slidesPerView={4}
           pagination={{ clickable: true, el: ".swiper-custom-pagination" }}
-          // onSwiper={(swiper) => console.log(swiper)}
-          // onSlideChange={() => console.log("slide change")}
           modules={[Pagination]}
           className="mySwiper"
         >

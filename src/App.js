@@ -4,7 +4,7 @@ import {
   // Footer,
   Experience,
   Header,
-  Skills,
+  // Skills,
   Particles,
   Slider,
 } from "./container";
@@ -19,7 +19,7 @@ const App = () => {
       <Particles />
       <Header />
       {/* <About /> */}
-      <Skills />
+      {/* <Skills /> */}
       <Slider />
       <Experience />
       {/* <Footer /> */}

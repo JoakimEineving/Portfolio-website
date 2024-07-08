@@ -19,10 +19,10 @@ const Experience = () => {
     {
       date: "2023 - Present",
       icon: faBriefcase,
-      title: "Automation Consultant",
+      title: "Software Developer",
       subtitle: "Bots & Friends",
       description:
-        "As an Automation Consultant, I specialize in optimizing business processes by developing automation solutions. My day-to-day responsibilities center around development — coding, debugging, and piecing together different components to create a cohesive automation system.",
+        "Fullstack developer at Bots & Friends. Working with a wide range of technologies such as .Net, Blazor, Azure, Power Platform and more. Developing solutions for clients in various industries.",
     },
     {
       date: "2021 - 06/2023",
@@ -115,7 +115,7 @@ const Experience = () => {
             className="button"
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/1WAs18Xd9xZ9H68PrQDCemSESXz2juhUX/view?usp=sharing",
+                "https://drive.google.com/file/d/19Tf50J6RyUxMfcg-y2qQ4oJi_Qf6Mk14/view?usp=sharing",
                 "_blank"
               )
             }

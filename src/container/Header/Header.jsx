@@ -59,7 +59,7 @@ const Header = () => {
               idx={22}
             />
           </h1>
-          <h2>Automation Consultant / Developer</h2>
+          <h2>Software Developer</h2>
 
           <motion.div
             id="icons"
