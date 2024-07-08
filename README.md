@@ -7,10 +7,6 @@
 
 <h4 align="center">Resposive Portfolio Website built with <a href="https://reactjs.org/" target="_blank">React</a>.</h4>
 
-<p align="center">
-<img src="https://github.com/JoakimEineving/portfolio-website/blob/master/src/assets/portfolio.gif">
-</p>
-
 <h2>
 :gear: How To Use
 </h2>
